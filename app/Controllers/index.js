@@ -16,7 +16,7 @@ app.post('/add-user',async (req, res) => { //async  uzun sürecek işlemleri ark
 
    
     if (!email || !password) {
-        return res.status(400).send('Kullanıcı adı ve şifre gerekli.'); // 404 olan bu, istemcinin (örneğin, bir web tarayıcısı) sunucuya gönderdiği isteğin geçersiz veya hatalı olduğunu belirtir.
+        return res.status(400).send('Kullanıcı adı gerekli.'); // 404 olan bu, istemcinin (örneğin, bir web tarayıcısı) sunucuya gönderdiği isteğin geçersiz veya hatalı olduğunu belirtir.
     }
 
     
