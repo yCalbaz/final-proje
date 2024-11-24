@@ -2,12 +2,29 @@ const express = require('express');
 const app = express();
 const port = 3000;
 const bcrypt = require('bcrypt');
-
+const mongoose = require('mongoose');
 
 app.use(express.json());
 
-const users = []; 
+const users = [];
 
+mongoose.connect('mongodb://kayze_05:kayze12345@cluster0-shard-00-00.mongodb.net:27017,cluster0-shard-00-01.mongodb.net:27017,cluster0-shard-00-02.mongodb.net:27017/musteri?ssl=true&replicaSet=Cluster0-shard-0&authSource=admin&retryWrites=true&w=majority', { 
+    useNewUrlParser: true, 
+    useUnifiedTopology: true 
+})
+    
+    // Bağlantı başarılı olduğunda 
+    mongoose.connection.once('open', () => { 
+        console.log('MongoDB bağlantısı kuruldu'); 
+    }); 
+    
+    // Kullanıcı şemasını oluşturun 
+    const userSchema = new mongoose.Schema({
+         email: { type: String, required: true }, 
+         password: { type: String, required: true } 
+        }); 
+        
+        const User = mongoose.model('User', userSchema);
 
 
 app.post('/add-user',async (req, res) => { //async  uzun sürecek işlemleri arka planda çalıştırarak, kullanıcının web sayfasının kilitlenmesini önlemek için kullanılır.
