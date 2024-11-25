@@ -6,50 +6,48 @@ const mongoose = require('mongoose');
 
 app.use(express.json());
 
-const users = [];
-
-mongoose.connect('mongodb://kayze_05:kayze12345@cluster0-shard-00-00.mongodb.net:27017,cluster0-shard-00-01.mongodb.net:27017,cluster0-shard-00-02.mongodb.net:27017/musteri?ssl=true&replicaSet=Cluster0-shard-0&authSource=admin&retryWrites=true&w=majority', { 
-    useNewUrlParser: true, 
-    useUnifiedTopology: true 
+mongoose.connect('mongodb+srv://kayze_05:kayze12345@kutuphanedb.nwmtbcm.mongodb.net/?retryWrites=true&w=majority&appName=Kutuphanedb', {
+    useNewUrlParser: true,
+    useUnifiedTopology: true,
+    serverSelectionTimeoutMS: 30000 // Zaman aşımını 30 saniyeye çıkar
 })
-    
-    // Bağlantı başarılı olduğunda 
-    mongoose.connection.once('open', () => { 
-        console.log('MongoDB bağlantısı kuruldu'); 
-    }); 
-    
-    // Kullanıcı şemasını oluşturun 
-    const userSchema = new mongoose.Schema({
-         email: { type: String, required: true }, 
-         password: { type: String, required: true } 
-        }); 
-        
-        const User = mongoose.model('User', userSchema);
+.then(() => {
+    console.log('MongoDB bağlantısı kuruldu');
+})
+.catch((err) => {
+    console.error('MongoDB bağlantısı kurulamadı:', err);
+});
 
+const userSchema = new mongoose.Schema({
+    email: { type: String, required: true },
+    password: { type: String, required: true }
+});
 
-app.post('/add-user',async (req, res) => { //async  uzun sürecek işlemleri arka planda çalıştırarak, kullanıcının web sayfasının kilitlenmesini önlemek için kullanılır.
-    
-    const { email, password } = req.body; 
+const User = mongoose.model('Kullanici', userSchema);
 
-   
+app.post('/add-user', async (req, res) => {
+    const { email, password } = req.body;
+
     if (!email || !password) {
-        return res.status(400).send('Kullanıcı adı gerekli.'); // 404 olan bu, istemcinin (örneğin, bir web tarayıcısı) sunucuya gönderdiği isteğin geçersiz veya hatalı olduğunu belirtir.
+        return res.status(400).send('Kullanıcı adı ve şifre gerekli.');
     }
 
-    
-
-    // password'ün bir string olduğunu kontrol et
     if (typeof password !== 'string') {
         return res.status(400).send('Şifre geçerli bir string olmalıdır.');
     }
-    
 
-    const hashedPassword = await bcrypt.hash(password, 10); // Parolayı hashledik 
-    // Kullanıcı adı ve hashlenmiş şifreyi terminalde göster
-    console.log(`Kullanıcı: ${email}, Hashlenmiş Şifre: ${hashedPassword}`)
-    users.push({ email, password: hashedPassword });
+    try {
+        const hashedPassword = await bcrypt.hash(password, 10);
+        console.log(`Kullanıcı: ${email}, Hashlenmiş Şifre: ${hashedPassword}`);
 
-    res.status(201).send( `kullanıcı eklendi! Kullanıcı: ${email}, Hashlenmiş Şifre: ${hashedPassword}` ); //202 olan Bu, sunucunun istemcinin isteğini başarıyla işlediğini ve yeni bir kaynağın oluşturulduğunu belirtir.
+        const newUser = new User({ email, password: hashedPassword });
+        await newUser.save();
+
+        res.status(201).send(`Kullanıcı eklendi! Kullanıcı: ${email}, Hashlenmiş Şifre: ${hashedPassword}`);
+    } catch (error) {
+        console.error(error);
+        res.status(500).send('Veritabanına kaydedilirken bir hata oluştu.');
+    }
 });
 
 app.get('/', (req, res) => {
