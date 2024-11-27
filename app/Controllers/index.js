@@ -43,7 +43,7 @@ app.post('/add-user', async (req, res) => {
         const newUser = new User({ email, password: hashedPassword });
         await newUser.save();
 
-        res.status(201).send(`Kullanıcı eklendi! Kullanıcı: ${email}, Hashlenmiş Şifre: ${hashedPassword}`);
+        res.status(201).send(`Kullanıcı eklendi! Kullanıcı: ${email},Şifre: ${hashedPassword}`);
     } catch (error) {
         console.error(error);
         res.status(500).send('Veritabanına kaydedilirken bir hata oluştu.');
