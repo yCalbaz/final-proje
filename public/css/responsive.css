@@ -1,0 +1,29 @@
+/* Genel ayarlar */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Tabletler için */
+@media (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
+
+    .menu {
+        flex-direction: column;
+    }
+}
+
+/* Mobil cihazlar için */
+@media (max-width: 480px) {
+    .header {
+        font-size: 16px;
+    }
+
+    .image {
+        width: 100%;
+        height: auto;
+    }
+}
