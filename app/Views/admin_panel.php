@@ -35,8 +35,11 @@
             <input type="text" id="delete-id" placeholder="Ürün ID" required>
             <button type="submit">Ürün Sil</button>
         </form>
-        
+        <!-- Ürün Listesi --> 
+        <h2>Ürün Listesi</h2> 
+        <button id="list-products">Ürünleri Listele</button> 
         <div id="product-list"></div>
+        
     </div>
     <script src="<?php echo base_url('public/assets/js/script.js'); ?>"></script>
 </body>
