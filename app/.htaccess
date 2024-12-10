@@ -1,3 +1,10 @@
+RewriteEngine On
+RewriteBase /finalproje/
+RewriteRule ^index\.php$ - [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /final proje/index.php [L]
+
 <IfModule authz_core_module>
     Require all denied
 </IfModule>

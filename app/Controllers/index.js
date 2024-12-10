@@ -3,6 +3,12 @@ const app = express();
 const port = 3000;
 const Joi = require('joi');
 const mongoose = require('mongoose');
+const bodyParser = require('body-parser'); 
+const cors = require('cors'); 
+
+app.use(cors()); 
+app.use(bodyParser.json());
+
 
 app.use(express.json());
 
@@ -86,6 +92,10 @@ app.patch('/urun/:id', async (req, res) => {
             } 
         });
 
-    app.listen(port, () => {
-    console.log(`Server is running at http://localhost:${port}`);
-});
+        app.listen(port, () => {
+            console.log(`Server is running at http://localhost:${port}`);
+        });
+
+
+        
+        
