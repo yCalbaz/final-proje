@@ -6,16 +6,18 @@
     <title>Yönetici Paneli</title>
     <link rel="stylesheet" href="<?php echo base_url('assets/css/styles.css'); ?>">
 </head>
+
+
 <body>
     <div class="container">
-        <h1>Yönetici Paneli</h1>
+        <h1>Ürün Yönetimi</h1>
         <!-- Ürün Ekleme Formu -->
-        <h2>Ürün Silme</h2>
         <form id="product-form">
             <input type="text" id="id" placeholder="Ürün ID" required>
             <input type="text" id="ad" placeholder="Ürün Adı" required>
             <input type="text" id="marka" placeholder="Ürün Marka" required>
             <input type="text" id="adet" placeholder="Ürün Adet" required>
+            <input type="file" id="resim" name="resim"  required>
             <button type="submit">Ürün Ekle</button>
         </form>
 
@@ -35,11 +37,11 @@
             <input type="text" id="delete-id" placeholder="Ürün ID" required>
             <button type="submit">Ürün Sil</button>
         </form>
-        <!-- Ürün Listesi --> 
-        <h2>Ürün Listesi</h2> 
-        <button id="list-products">Ürünleri Listele</button> 
+
+        <!-- Ürün Listeleme Butonu ve Listesi -->
+        <h2>Ürün Listesi</h2>
+        <button id="list-products">Ürünleri Listele</button>
         <div id="product-list"></div>
-        
     </div>
     <script src="<?php echo base_url('public/assets/js/script.js'); ?>"></script>
 </body>
