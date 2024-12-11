@@ -6,35 +6,36 @@
     <title>Yönetici Paneli</title>
     <link rel="stylesheet" href="<?php echo base_url('assets/css/styles.css'); ?>">
 </head>
-
-
 <body>
     <div class="container">
         <h1>Ürün Yönetimi</h1>
+
         <!-- Ürün Ekleme Formu -->
-        <form id="product-form">
-            <input type="text" id="id" placeholder="Ürün ID" required>
-            <input type="text" id="ad" placeholder="Ürün Adı" required>
-            <input type="text" id="marka" placeholder="Ürün Marka" required>
-            <input type="text" id="adet" placeholder="Ürün Adet" required>
-            <input type="file" id="resim" name="resim"  required>
+        <form id="product-form" enctype="multipart/form-data">
+            <input type="text" id="id" name="id" placeholder="Ürün ID" required>
+            <input type="text" id="ad" name="ad" placeholder="Ürün Adı" required>
+            <input type="text" id="marka" name="marka" placeholder="Ürün Marka" required>
+            <input type="text" id="adet" name="adet" placeholder="Ürün Adet" required>
+            <input type="text" id="fiyat" name="fiyat" placeholder="Ürün Fiyatı" required>
+            <input type="file" id="resim" name="resim" required>
             <button type="submit">Ürün Ekle</button>
         </form>
 
         <!-- Ürün Güncelleme Formu -->
         <h2>Ürün Güncelleme</h2>
         <form id="update-form">
-            <input type="text" id="update-id" placeholder="Ürün ID" required>
-            <input type="text" id="update-ad" placeholder="Yeni Ürün Adı">
-            <input type="text" id="update-marka" placeholder="Yeni Ürün Marka">
-            <input type="text" id="update-adet" placeholder="Yeni Ürün Adet">
+            <input type="text" id="update-id" name="id" placeholder="Ürün ID" required>
+            <input type="text" id="update-ad" name="ad" placeholder="Yeni Ürün Adı">
+            <input type="text" id="update-marka" name="marka" placeholder="Yeni Ürün Marka">
+            <input type="text" id="update-adet" name="adet" placeholder="Yeni Ürün Adet">
+            <input type="text" id="update-fiyat" name="fiyat" placeholder="Yeni Ürün Fiyatı">
             <button type="submit">Ürün Güncelle</button>
         </form>
 
         <!-- Ürün Silme Formu -->
         <h2>Ürün Silme</h2>
         <form id="delete-form">
-            <input type="text" id="delete-id" placeholder="Ürün ID" required>
+            <input type="text" id="delete-id" name="id" placeholder="Ürün ID" required>
             <button type="submit">Ürün Sil</button>
         </form>
 

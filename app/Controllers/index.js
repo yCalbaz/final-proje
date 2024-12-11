@@ -37,7 +37,8 @@ const urunSchema = new mongoose.Schema({
     ad: { type: String, required: true }, 
     marka: { type: String, required: true }, 
     adet: { type: String, required: true },
-    resim: { type: String, required: false } // Resim alanını isteğe bağlı yapma
+    fiyat: { type: Number, required: true }, // Fiyat alanını ekleyin
+    resim: { type: String, required: false }
 });
 const Urun = mongoose.model('Urun', urunSchema);
 
@@ -47,16 +48,17 @@ app.post('/urun', upload.single('resim'), async (req, res) => {
         ad: Joi.string().required(), 
         marka: Joi.string().pattern(/^[^\d]+$/).required(), 
         adet: Joi.string().pattern(/^\d+$/).required(),
+        fiyat: Joi.number().required(), // Fiyat alanını ekleyin
         resim: Joi.string().allow('').optional()
     }); 
     const { error } = schema.validate(req.body); 
     if (error) { 
         return res.status(400).send(error.details[0].message); 
     } 
-    const { id, ad, marka, adet } = req.body; 
+    const { id, ad, marka, adet, fiyat } = req.body; 
     const resim = req.file ? req.file.filename : null;
     try { 
-        const yeniUrun = new Urun({ id, ad, marka, adet, resim }); 
+        const yeniUrun = new Urun({ id, ad, marka, adet, fiyat, resim }); 
         await yeniUrun.save(); 
         res.status(201).send('Ürün başarıyla eklendi.'); 
     } catch (err) { 
@@ -80,17 +82,18 @@ app.patch('/urun/:id', async (req, res) => {
     const schema = Joi.object({ 
         ad: Joi.string(), 
         marka: Joi.string().pattern(/^[^\d]+$/), 
-        adet: Joi.string().pattern(/^\d+$/) 
+        adet: Joi.string().pattern(/^\d+$/),
+        fiyat: Joi.number() // Fiyat alanını ekleyin
     }); 
     const { error } = schema.validate(req.body); 
     if (error) { 
         return res.status(400).send(error.details[0].message); 
     } 
-    const { ad, marka, adet } = req.body; 
+    const { ad, marka, adet, fiyat } = req.body; 
     try { 
         const urun = await Urun.findOneAndUpdate( 
             { id: id }, 
-            { $set: { ad, marka, adet } }, 
+            { $set: { ad, marka, adet, fiyat } }, 
             { new: true, runValidators: true } 
         );
         if (!urun) { 
