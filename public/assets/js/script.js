@@ -8,10 +8,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // Ürün ekleme işlevi
     productForm.addEventListener('submit', async (e) => {
         e.preventDefault();
-        const id = document.getElementById('id').value;
-        const ad = document.getElementById('ad').value;
-        const marka = document.getElementById('marka').value;
-        const adet = document.getElementById('adet').value;
+        const formData = new FormData(productForm);
 
         try {
             const response = await fetch('http://localhost:3000/urun', {
@@ -26,6 +23,7 @@ document.addEventListener('DOMContentLoaded', () => {
             const responseData = await response.json();
             console.log('Sunucu Yanıtı:', responseData);
             addProductToList(responseData);
+            productForm.reset(); // Formu sıfırlayın
         } catch (error) {
             console.error('Fetch error:', error);
         }
@@ -38,6 +36,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const ad = document.getElementById('update-ad').value;
         const marka = document.getElementById('update-marka').value;
         const adet = document.getElementById('update-adet').value;
+        const fiyat = document.getElementById('update-fiyat').value;
 
         try {
             const response = await fetch(`http://localhost:3000/urun/${id}`, {
@@ -45,7 +44,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 headers: {
                     'Content-Type': 'application/json'
                 },
-                body: JSON.stringify({ ad, marka, adet })
+                body: JSON.stringify({ ad, marka, adet, fiyat })
             });
 
             if (!response.ok) {
@@ -105,8 +104,10 @@ document.addEventListener('DOMContentLoaded', () => {
             <h3>${product.ad}</h3>
             <p>Marka: ${product.marka}</p>
             <p>Adet: ${product.adet}</p>
-            <button onclick="editProduct('${product.id}', '${product.ad}', '${product.marka}', '${product.adet}')">Düzenle</button>
-            <button onclick="deleteProduct('${product.id}')">Sil</button>
+            <p>Fiyat: ${product.fiyat}</p>
+            <img src="/uploads/${product.resim}" alt="Ürün Resmi" width="100">
+            <button onclick="editProduct('${product._id}', '${product.ad}', '${product.marka}', '${product.adet}', '${product.fiyat}')">Düzenle</button>
+            <button onclick="deleteProduct('${product._id}')">Sil</button>
         `;
         productList.appendChild(productItem);
     }
@@ -127,11 +128,12 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     // Ürün düzenleme işlevi (liste içindeki)
-    function editProduct(id, ad, marka, adet) {
+    function editProduct(id, ad, marka, adet, fiyat) {
         document.getElementById('update-id').value = id;
         document.getElementById('update-ad').value = ad;
         document.getElementById('update-marka').value = marka;
         document.getElementById('update-adet').value = adet;
+        document.getElementById('update-fiyat').value = fiyat;
     }
 
     // Sayfa yüklendiğinde ürünleri getir
@@ -147,38 +149,6 @@ document.addEventListener('DOMContentLoaded', () => {
             console.error('Fetch error:', error);
         }
     }
-
-
-        // Ürün listeye ekleme işlevi
-        function addProductToList(product) {
-            const productItem = document.createElement('div');
-            productItem.className = 'product-item';
-            productItem.innerHTML = `
-                <h3>${product.ad}</h3>
-                <p>Marka: ${product.marka}</p>
-                <p>Adet: ${product.adet}</p>
-                <img src="${product.resim}" alt="Ürün Resmi">
-                <button onclick="editProduct('${product.id}', '${product.ad}', '${product.marka}', '${product.adet}')">Düzenle</button>
-                <button onclick="deleteProduct('${product.id}')">Sil</button>
-            `;
-            productList.appendChild(productItem);
-        }
-    
-        // Sayfa yüklendiğinde ürünleri getir
-        async function fetchProducts() {
-            try {
-                const response = await fetch('http://localhost:3000/urun');
-                if (!response.ok) {
-                    throw new Error('Network response was not ok');
-                }
-                const products = await response.json();
-                products.forEach(product => addProductToList(product));
-            } catch (error) {
-                console.error('Fetch error:', error);
-            }
-        }
-    
-    
 
     fetchProducts();
 });
