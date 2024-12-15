@@ -11,7 +11,7 @@
         <h1>Ürün Yönetimi</h1>
 
         <!-- Ürün Ekleme Formu -->
-        <form id="product-form" enctype="multipart/form-data">
+        <form id="product-form" enctype="multipart/form-data" method="POST" action="http://localhost:3000/urun">
             <input type="text" id="id" name="id" placeholder="Ürün ID" required>
             <input type="text" id="ad" name="ad" placeholder="Ürün Adı" required>
             <input type="text" id="marka" name="marka" placeholder="Ürün Marka" required>
@@ -23,7 +23,7 @@
 
         <!-- Ürün Güncelleme Formu -->
         <h2>Ürün Güncelleme</h2>
-        <form id="update-form">
+        <form id="update-form"  method="PATCH" action="http://localhost:3000//urun/:id">
             <input type="text" id="update-id" name="id" placeholder="Ürün ID" required>
             <input type="text" id="update-ad" name="ad" placeholder="Yeni Ürün Adı">
             <input type="text" id="update-marka" name="marka" placeholder="Yeni Ürün Marka">
@@ -34,15 +34,17 @@
 
         <!-- Ürün Silme Formu -->
         <h2>Ürün Silme</h2>
-        <form id="delete-form">
+        <form id="delete-form" method="DELETE" action="http://localhost:3000//urun/:id" >
             <input type="text" id="delete-id" name="id" placeholder="Ürün ID" required>
             <button type="submit">Ürün Sil</button>
         </form>
 
         <!-- Ürün Listeleme Butonu ve Listesi -->
         <h2>Ürün Listesi</h2>
-        <button id="list-products">Ürünleri Listele</button>
+        <button id="list-products" action="http://localhost:3000//urun">Ürünleri Listele</button>
         <div id="product-list"></div>
+        <img src="http://localhost:3000/uploads/1234567890-resim.jpg" alt="Ürün Resmi">
+
     </div>
     <script src="<?php echo base_url('public/assets/js/script.js'); ?>"></script>
 </body>

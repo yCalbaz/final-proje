@@ -1,154 +1,107 @@
-document.addEventListener('DOMContentLoaded', () => {
-    const productForm = document.getElementById('product-form');
-    const updateForm = document.getElementById('update-form');
-    const deleteForm = document.getElementById('delete-form');
-    const listButton = document.getElementById('list-products');
-    const productList = document.getElementById('product-list');
+document.getElementById('product-form').addEventListener('submit', function(event) {
+    event.preventDefault(); // Formun varsayılan submit davranışını engelle
 
-    // Ürün ekleme işlevi
-    productForm.addEventListener('submit', async (e) => {
-        e.preventDefault();
-        const formData = new FormData(productForm);
+    // Form verilerini alalım
+    const formData = new FormData();
+    formData.append('id', document.getElementById('id').value);
+    formData.append('ad', document.getElementById('ad').value);
+    formData.append('marka', document.getElementById('marka').value);
+    formData.append('adet', document.getElementById('adet').value);
+    formData.append('fiyat', document.getElementById('fiyat').value);
+    formData.append('resim', document.getElementById('resim').files[0]); // Resim dosyasını ekle
 
-        try {
-            const response = await fetch('http://localhost:3000/urun', {
-                method: 'POST',
-                body: formData
-            });
-
-            if (!response.ok) {
-                throw new Error('Network response was not ok');
-            }
-
-            const responseData = await response.json();
-            console.log('Sunucu Yanıtı:', responseData);
-            addProductToList(responseData);
-            productForm.reset(); // Formu sıfırlayın
-        } catch (error) {
-            console.error('Fetch error:', error);
-        }
+    // AJAX isteği
+    fetch('http://localhost:3000/urun', {
+        method: 'POST',
+        body: formData, // Form verilerini gönder
+    })
+    .then(response => response.json()) // JSON formatında cevap al
+    .then(data => {
+        console.log('Success:', data);
+        alert('Ürün başarıyla eklendi.'); // Başarılıysa mesaj göster
+    })
+    .catch(error => {
+        console.error('Error:', error);
+        alert('Bir hata oluştu: ' + error.message); // Hata durumunda mesaj göster
     });
+});
 
-    // Ürün güncelleme işlevi
-    updateForm.addEventListener('submit', async (e) => {
-        e.preventDefault();
-        const id = document.getElementById('update-id').value;
-        const ad = document.getElementById('update-ad').value;
-        const marka = document.getElementById('update-marka').value;
-        const adet = document.getElementById('update-adet').value;
-        const fiyat = document.getElementById('update-fiyat').value;
+document.getElementById('update-form').addEventListener('submit', function(event) {
+    event.preventDefault(); // Formun varsayılan submit davranışını engelle
 
-        try {
-            const response = await fetch(`http://localhost:3000/urun/${id}`, {
-                method: 'PATCH',
-                headers: {
-                    'Content-Type': 'application/json'
-                },
-                body: JSON.stringify({ ad, marka, adet, fiyat })
-            });
+    const id = document.getElementById('update-id').value;
+    const formData = {
+        ad: document.getElementById('update-ad').value,
+        marka: document.getElementById('update-marka').value,
+        adet: document.getElementById('update-adet').value,
+        fiyat: document.getElementById('update-fiyat').value
+    };
 
-            if (!response.ok) {
-                throw new Error('Network response was not ok');
-            }
-
-            const responseData = await response.json();
-            console.log('Sunucu Yanıtı:', responseData);
-            document.location.reload();
-        } catch (error) {
-            console.error('Fetch error:', error);
-        }
+    // Güncelleme isteği
+    fetch(`http://localhost:3000/urun/${id}`, {
+        method: 'PATCH',
+        headers: {
+            'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
+    })
+    .then(response => response.json())
+    .then(data => {
+        console.log('Success:', data);
+        alert('Ürün başarıyla güncellendi.');
+    })
+    .catch(error => {
+        console.error('Error:', error);
+        alert('Bir hata oluştu: ' + error.message);
     });
+});
 
-    // Ürün silme işlevi
-    deleteForm.addEventListener('submit', async (e) => {
-        e.preventDefault();
-        const id = document.getElementById('delete-id').value;
+document.getElementById('delete-form').addEventListener('submit', function(event) {
+    event.preventDefault(); // Formun varsayılan submit davranışını engelle
 
-        try {
-            const response = await fetch(`http://localhost:3000/urun/${id}`, {
-                method: 'DELETE'
-            });
+    const id = document.getElementById('delete-id').value;
 
-            if (!response.ok) {
-                throw new Error('Network response was not ok');
-            }
-
-            const responseData = await response.text();
-            console.log('Sunucu Yanıtı:', responseData);
-            document.location.reload();
-        } catch (error) {
-            console.error('Fetch error:', error);
-        }
+    // Silme isteği
+    fetch(`http://localhost:3000/urun/id`, {
+        method: 'DELETE',
+    })
+    .then(response => response.json())
+    .then(data => {
+        console.log('Success:', data);
+        alert('Ürün başarıyla silindi.');
+    })
+    .catch(error => {
+        console.error('Error:', error);
+        alert('Bir hata oluştu: ' + error.message);
     });
+});
 
-    // Ürünleri listeleme işlevi
-    listButton.addEventListener('click', async () => {
-        productList.innerHTML = ''; // Mevcut listeyi temizleyin
-        try {
-            const response = await fetch('http://localhost:3000/urun');
-            if (!response.ok) {
-                throw new Error('Network response was not ok');
-            }
-            const products = await response.json();
-            products.forEach(product => addProductToList(product));
-        } catch (error) {
-            console.error('Fetch error:', error);
-        }
-    });
+document.getElementById('list-products').addEventListener('click', function() {
+    // Ürün listeleme isteği
+    fetch('http://localhost:3000/urun')
+    .then(response => response.json())
+    .then(data => {
+        const productList = document.getElementById('product-list');
+        productList.innerHTML = ''; // Önceki listeyi temizle
 
-    // Ürün listeye ekleme işlevi
-    function addProductToList(product) {
-        const productItem = document.createElement('div');
-        productItem.className = 'product-item';
-        productItem.innerHTML = `
-            <h3>${product.ad}</h3>
-            <p>Marka: ${product.marka}</p>
-            <p>Adet: ${product.adet}</p>
-            <p>Fiyat: ${product.fiyat}</p>
-            <img src="/uploads/${product.resim}" alt="Ürün Resmi" width="100">
-            <button onclick="editProduct('${product._id}', '${product.ad}', '${product.marka}', '${product.adet}', '${product.fiyat}')">Düzenle</button>
-            <button onclick="deleteProduct('${product._id}')">Sil</button>
-        `;
-        productList.appendChild(productItem);
-    }
-
-    // Ürün silme işlevi (liste içindeki)
-    async function deleteProduct(id) {
-        try {
-            const response = await fetch(`http://localhost:3000/urun/${id}`, {
-                method: 'DELETE'
+        if (data.length === 0) {
+            productList.innerHTML = 'Hiç ürün bulunmamaktadır.';
+        } else {
+            data.forEach(urun => {
+                const productItem = document.createElement('div');
+                productItem.innerHTML = `
+                    <strong>${urun.ad}</strong><br>
+                    Marka: ${urun.marka}<br>
+                    Adet: ${urun.adet}<br>
+                    Fiyat: ${urun.fiyat}<br>
+                    ${urun.resim ? `<img src="http://localhost:3000/uploads/${urun.resim}" alt="Ürün Resmi" width="100">` : 'Resim yok'}<br><br>
+                `;
+                productList.appendChild(productItem);
             });
-            if (!response.ok) {
-                throw new Error('Network response was not ok');
-            }
-            document.location.reload();
-        } catch (error) {
-            console.error('Fetch error:', error);
         }
-    }
-
-    // Ürün düzenleme işlevi (liste içindeki)
-    function editProduct(id, ad, marka, adet, fiyat) {
-        document.getElementById('update-id').value = id;
-        document.getElementById('update-ad').value = ad;
-        document.getElementById('update-marka').value = marka;
-        document.getElementById('update-adet').value = adet;
-        document.getElementById('update-fiyat').value = fiyat;
-    }
-
-    // Sayfa yüklendiğinde ürünleri getir
-    async function fetchProducts() {
-        try {
-            const response = await fetch('http://localhost:3000/urun');
-            if (!response.ok) {
-                throw new Error('Network response was not ok');
-            }
-            const products = await response.json();
-            products.forEach(product => addProductToList(product));
-        } catch (error) {
-            console.error('Fetch error:', error);
-        }
-    }
-
-    fetchProducts();
+    })
+    .catch(error => {
+        console.error('Error:', error);
+        alert('Ürünler alınırken bir hata oluştu.');
+    });
 });
