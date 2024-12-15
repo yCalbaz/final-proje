@@ -339,6 +339,10 @@ img {
                 <li><a href="hakkimizda.php">Hakkımızda</a></li>
                 <li><a href="iletisim.php">İletişim</a></li>
                 <li><a href="sepet.php">Sepetim</a></li>
+                <li class="nav-item">
+                <a class="nav-link" href="<?php echo base_url('login'); ?>">Giriş</a>
+                </li>
+
             </ul>
         </nav>
     </div>
