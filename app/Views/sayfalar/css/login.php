@@ -28,20 +28,5 @@
             </form>
             <div class='pb-5'></div>
         </div>
-
-        <div class="col-lg-8">
-            <h1 class="mt-4 text-primary"><i>Üyelik</i></h1>
-            <div class="form-group">
-                <label for="asd">Kullanıcı Adı</label>
-                <input type="text" class="form-control" id="asd" name="asd">
-            </div>
-            <div class="form-group">
-                <label for="qwe">Şifre:</label>
-                <input type="password" class="form-control" id="qwe" name="qwe">
-            </div>
-
-            <input type="submit" name="asdgasd" class="btn btn-danger" value="Giriş Yap">
-            <div class='pb-5'></div>
-        </div>
     </div>
 </div>
