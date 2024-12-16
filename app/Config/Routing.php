@@ -43,7 +43,7 @@ class Routing extends BaseRouting
      *
      * Default: 'Home'
      */
-    public string $defaultController = 'Anasayfa';
+    public string $defaultController = 'Home';
 
     /**
      * The default method to call on the controller when no other

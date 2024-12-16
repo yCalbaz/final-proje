@@ -38,4 +38,3 @@
         <p>&copy; 2024 Kayze Elektirik. Tüm Hakları Saklıdır.</p>
     </div>
 </footer>
-

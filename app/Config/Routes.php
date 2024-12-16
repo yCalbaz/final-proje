@@ -5,7 +5,7 @@ use CodeIgniter\Router\RouteCollection;
 /**
  * @var RouteCollection $routes
  */
-$routes->get('/', 'Anasayfa::index');
+$routes->get('/', 'Home::index');
 $routes->get('/admin', 'Admin::index');
-$routes->match(['get','post'],'login', 'Anasayfa::login');
+$routes->match(['get','post'],'login', 'Home::login');
 
