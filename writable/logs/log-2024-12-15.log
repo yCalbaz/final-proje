@@ -1,0 +1,11 @@
+CRITICAL - 2024-12-15 19:17:16 --> Undefined variable $title
+in APPPATH\Views\tema\header.php on line 8.
+ 1 APPPATH\Views\tema\header.php(8): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $title', 'C:\\wamp64\\www\\final-proje\\app\\Views\\tema\\header.php', 8)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\wamp64\\www\\final-proje\\app\\Views\\tema\\header.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('tema/header', [], true)
+ 5 APPPATH\Controllers\Anasayfa.php(7): view('tema/header')
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Anasayfa->index()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anasayfa))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()

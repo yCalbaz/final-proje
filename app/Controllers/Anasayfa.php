@@ -1,11 +1,16 @@
 <?php
-defined('BASEPATH') OR exit('No direct script access allowed');
-
-class Anasayfa extends CI_Controller {
-
+namespace App\Controllers;
+class Anasayfa extends BaseController
+{
     public function index()
     {
-        // Anasayfa görünümünü yükle
-        $this->load->view('anasayfa'); 
+        return view('tema/header').view('anasayfa').view('tema/footer');
+    }
+    public function login()
+    {
+        
+            return view('tema/header').view('sayfalar/login').view('tema/footer');
+        
+        
     }
 }

@@ -2,7 +2,8 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>KAYZfhngngvmödvklkmkkfvlkE</title>
+    <title>KAYZE</title>
+
     <meta name="description" content="The small framework with powerful features">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" type="image/png" href="/favicon.ico">
@@ -20,10 +21,31 @@
 <body>
 
 <!-- HEADER: MENU + HEROE SECTION -->
+<<<<<<< HEAD
 <!-- HEADER: MENU + HEROE SECTION -->
 
 <?php include('tema/header.php'); ?>
 
+=======
+<header>
+    <div class="container">
+        <h1>KAYZE</h1>
+        <nav>
+            <ul>
+                <li><a href="index.php">Anasayfa</a></li>
+                <li><a href="urunler.php">Ürünler</a></li>
+                <li><a href="hakkimizda.php">Hakkımızda</a></li>
+                <li><a href="iletisim.php">İletişim</a></li>
+                <li><a href="sepet.php">Sepetim</a></li>
+                <li class="nav-item">
+                <a class="nav-link" href="<?php echo base_url('login'); ?>">Giriş</a>
+                </li>
+
+            </ul>
+        </nav>
+    </div>
+</header>
+>>>>>>> 5d364df484b8a1e0a344394513baa06587f0e5cd
 
 <!-- Slayt Gösterisi -->
 <div class="slider-container">
@@ -102,7 +124,7 @@
 
 <!-- FOOTER: DEBUG INFO + COPYRIGHTS -->
 
-<?php include('tema/footer.php'); ?>
+
 
 <!-- SCRIPTS -->
 
