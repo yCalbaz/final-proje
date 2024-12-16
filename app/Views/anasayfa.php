@@ -6,360 +6,39 @@
     <meta name="description" content="The small framework with powerful features">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" type="image/png" href="/favicon.ico">
-    <link rel="stylesheet" href="sayfalar/css/anasayfa.php">
+    <link rel="stylesheet" href="assets/css/anasayfa.css">
+    
     <link rel="stylesheet" href="<?= base_url('css/responsive.css'); ?>"> 
 
     <!-- STYLES -->
 
-    <style {csp-style-nonce}>
-        
-        
-/* Genel Stiller (Tüm cihazlar için geçerli) */
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f9f9f9;
-    color: #333;
-}
+   <!-- <style {csp-style-nonce}>
+      
 
-.container {
-    width: 90%;
-    max-width: 1200px;
-    margin: auto;
-}
-
-/* Başlık ve Menü */
-header {
-    background-color: #007bff;
-    color: #fff;
-    padding: 10px 0;
-    text-align: center;
-}
-
-header h1 {
-    margin: 0;
-}
-
-nav ul {
-    list-style: none;
-    padding: 0;
-    margin: 10px 0;
-    display: flex;
-    justify-content: center;
-    gap: 15px;
-}
-
-nav ul li {
-    margin: 0;
-}
-
-nav ul li a {
-    color: #fff;
-    text-decoration: none;
-    font-size: 16px;
-    padding: 8px 15px;
-    border-radius: 5px;
-    transition: background-color 0.3s;
-}
-
-nav ul li a:hover {
-    background-color: #0056b3;
-}
-
-/* Ürün Grid */
-.product-grid {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    margin-top: 20px;
-    justify-content: space-between;
-}
-
-.product {
-    background: #fff;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    text-align: center;
-    padding: 15px;
-    flex: 1 1 calc(25% - 20px); /* 4 sütun düzeni */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-
-.product img {
-    max-width: 100%;
-    height: auto;
-    margin-bottom: 10px;
-    border-radius: 5px;
-}
-
-.product h3 {
-    font-size: 18px;
-    margin: 10px 0;
-}
-
-.product p {
-    font-size: 16px;
-    color: #555;
-}
-
-.product .btn {
-    display: inline-block;
-    margin-top: 10px;
-    padding: 10px 20px;
-    background-color: #007bff;
-    color: #fff;
-    text-decoration: none;
-    border-radius: 5px;
-}
-
-.product .btn:hover {
-    background-color: #0056b3;
-}
-
-/* Footer */
-footer {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 10px 0;
-    margin-top: 20px;
-}
-
-/* Mobil Uyumluluk */
-@media (max-width: 768px) {
-    nav ul {
-        flex-direction: column; /* Menü alt alta gelsin */
-        gap: 10px;
-    }
-
-    .product-grid {
-        justify-content: center; /* Ürünler ortalansın */
-    }
-
-    .product {
-        flex: 1 1 calc(50% - 20px); /* 2 sütun düzeni */
-    }
-}
-
-@media (max-width: 480px) {
-    .product {
-        flex: 1 1 100%; /* Tek sütun düzeni */
-    }
-
-    nav ul li a {
-        font-size: 14px;
-        padding: 8px 10px;
-    }
-}
-
-   
-
-    /* Genel Stiller */
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f9f9f9;
-    color: #333;
-}
-
-.container {
-    width: 90%;
-    max-width: 1200px;
-    margin: auto;
-}
-
-/* Başlık ve Menü */
-header {
-    background-color: #007bff;
-    color: #fff;
-    padding: 10px 0;
-}
-
-header h1 {
-    margin: 0;
-    text-align: center;
-}
-
-nav ul {
-    list-style: none;
-    padding: 0;
-    text-align: center;
-}
-
-nav ul li {
-    display: inline;
-    margin: 0 15px;
-}
-
-nav ul li a {
-    color: #fff;
-    text-decoration: none;
-}
-
-/* Ürün Grid */
-.product-grid {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    margin-top: 20px;
-    justify-content: space-between;
-}
-
-.product {
-    background: #fff;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    text-align: center;
-    padding: 15px;
-    flex: 1 1 calc(25% - 20px);
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-
-.product img {
-    max-width: 100%;
-    height: auto;
-    margin-bottom: 10px;
-    border-radius: 5px;
-}
-
-.product h3 {
-    font-size: 18px;
-    margin: 10px 0;
-}
-
-.product p {
-    font-size: 16px;
-    color: #555;
-}
-
-.product .btn {
-    display: inline-block;
-    margin-top: 10px;
-    padding: 10px 20px;
-    background-color: #007bff;
-    color: #fff;
-    text-decoration: none;
-    border-radius: 5px;
-}
-
-.product .btn:hover {
-    background-color: #0056b3;
-}
-
-/* Footer */
-footer {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 10px 0;
-    margin-top: 20px;
-}
-
-/* Menü Stili */
-nav ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex; /* Flexbox kullanımı ile yatay hizalama */
-    justify-content: center; /* Ortada hizalama */
-    gap: 15px; /* Menü öğeleri arasına boşluk */
-}
-
-nav ul li {
-    margin: 0;
-}
-
-nav ul li a {
-    color: #fff;
-    text-decoration: none;
-    font-size: 16px;
-    padding: 8px 15px;
-    border-radius: 5px;
-    transition: background-color 0.3s;
-}
-
-nav ul li a:hover {
-    background-color: #0056b3; /* Hover sırasında arka plan rengi */
-}
-
-/* Slider Genel Ayarları */
-.slider-container {
-    position: relative;
-    max-width: 100%;
-    margin: 0 auto;
-    overflow: hidden;
-}
-
-.slider {
-    display: flex;
-    width: 500%;
-    transition: transform 1s ease;
-}
-
-.slide {
-    width: 100%;
-    flex: 0 0 auto;
-}
-
-img {
-    width: 100%;
-    height: auto;
-    border-radius: 10px;
-    display: block;
-}
-
-/* Slide Geçişi */
-.fade {
-    opacity: 0;
-    animation: fadeIn 2s forwards;
-}
-
-@keyframes fadeIn {
-    0% { opacity: 0; }
-    100% { opacity: 1; }
-}
-
-
-
-    </style>
+    </style>  -->
 </head>
 <body>
 
 <!-- HEADER: MENU + HEROE SECTION -->
-<header>
-    <div class="container">
-        <h1>KAYZE</h1>
-        <nav>
-            <ul>
-                <li><a href="index.php">Anasayfa</a></li>
-                <li><a href="urunler.php">Ürünler</a></li>
-                <li><a href="hakkimizda.php">Hakkımızda</a></li>
-                <li><a href="iletisim.php">İletişim</a></li>
-                <li><a href="sepet.php">Sepetim</a></li>
-            </ul>
-        </nav>
-    </div>
-</header>
+<!-- HEADER: MENU + HEROE SECTION -->
+
+<?php include('tema/header.php'); ?>
+
 
 <!-- Slayt Gösterisi -->
 <div class="slider-container">
         <div class="slider">
             <div class="slide fade">
-                <img src="images/e1elektirik.jpg" alt="Slayt 1">
+                <img src="assets/images/1elektirik.jpg" alt="Slayt 1">
             </div>
             <div class="slide fade">
-                <img src="images/e2elektirik.jpg" alt="Slayt 2">
+                <img src="assets/images/2elektirik.jpg" alt="Slayt 2">
             </div>
             <div class="slide fade">
-                <img src="images/e3elektirik.jpg" alt="Slayt 3">
+                <img src="assets/images/3elektirik.jpg" alt="Slayt 3">
             </div>
             <div class="slide fade">
-                <img src="images/e4elektirik.jpg" alt="Slayt 4">
-            </div>
-            <div class="slide fade">
-                <img src="images/e5elektirik.jpg" alt="Slayt 5">
+                <img src="assets/images/5elektirik.jpg" alt="Slayt 5">
             </div>
         </div>
 </div>
