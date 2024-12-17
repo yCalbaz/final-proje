@@ -19,8 +19,8 @@ app.use('/uploads', express.static(path.join(__dirname, 'uploads')));
 // Multer ayarları
 const storage = multer.diskStorage({
     destination: (req, file, cb) => {
-        const uploadDir = path.join(__dirname, 'uploads'); // controllers/uploads
-        cb(null, uploadDir); 
+        const uploadDir = path.join(__dirname, 'uploads');
+        cb(null, uploadDir);
     },
     filename: (req, file, cb) => {
         cb(null, `${Date.now()}-${file.originalname}`);
@@ -75,48 +75,36 @@ app.post('/urun', upload.single('resim'), async (req, res) => {
     }
 });
 
-app.get('/urun', async (req, res) => {
+// Ürün Listeleme
+app.get('/urunler', async (req, res) => {
     try {
-        const urunler = await Urun.find();
+        const urunler = await Urun.find({});
         res.json(urunler);
     } catch (err) {
-        res.status(500).send('Ürünler getirilirken bir hata oluştu: ' + err.message);
+        res.status(500).send('Ürünler alınamadı: ' + err.message);
     }
 });
 
 // Ürün Güncelleme
 app.patch('/urun/:id', async (req, res) => {
     const { id } = req.params;
-    const schema = Joi.object({
-        ad: Joi.string(),
-        marka: Joi.string().pattern(/^[^\d]+$/),
-        adet: Joi.string().pattern(/^\d+$/),
-        fiyat: Joi.number(),
-        resim: Joi.string().allow('').optional()
-    });
-    const { error } = schema.validate(req.body);
-    if (error) {
-        return res.status(400).send(error.details[0].message);
-    }
-
-    const { ad, marka, adet, fiyat, resim } = req.body;
+    const { ad, marka, adet, fiyat } = req.body;
     try {
         const updatedUrun = await Urun.findOneAndUpdate(
             { id: id },
-            { $set: { ad, marka, adet, fiyat, resim } },
+            { $set: { ad, marka, adet, fiyat } },
             { new: true, runValidators: true }
         );
-
         if (!updatedUrun) {
             return res.status(404).send('Ürün bulunamadı.');
         }
-        res.send('Ürün başarıyla güncellendi.');
+        res.json(updatedUrun);
     } catch (err) {
         res.status(400).send('Ürün güncellenirken bir hata oluştu: ' + err.message);
     }
 });
 
-/// Ürün Silme
+// Ürün Silme
 app.delete('/urun/:id', async (req, res) => {
     const { id } = req.params;
     try {
@@ -124,13 +112,13 @@ app.delete('/urun/:id', async (req, res) => {
         if (!urun) {
             return res.status(404).send('Ürün bulunamadı.');
         }
-        res.send('Ürün başarıyla silindi.');
+        res.status(200).send('Ürün başarıyla silindi');
     } catch (err) {
-        res.status(400).send('Ürün silinirken bir hata oluştu: ' + err.message);
+        res.status(400).send('Silme hatası: ' + err.message);
     }
 });
 
-// Sunucuyu başlat
+// Sunucu Başlatma
 app.listen(port, () => {
-    console.log(`Server is running at http://localhost:${port}`);
+    console.log(`Sunucu http://localhost:${port} adresinde çalışıyor`);
 });

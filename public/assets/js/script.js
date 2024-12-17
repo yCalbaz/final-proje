@@ -27,23 +27,28 @@ document.getElementById('product-form').addEventListener('submit', function(even
 });
 
 document.getElementById('update-form').addEventListener('submit', function(event) {
-    event.preventDefault(); // Formun varsayılan submit davranışını engelle
+    event.preventDefault(); // Formun varsayılan davranışını engelleyin
 
-    const id = document.getElementById('update-id').value;
+    const id = document.getElementById('update-id').value; // Güncellemek istediğiniz ürünün ID'si
     const formData = {
         ad: document.getElementById('update-ad').value,
         marka: document.getElementById('update-marka').value,
         adet: document.getElementById('update-adet').value,
-        fiyat: document.getElementById('update-fiyat').value
+        fiyat: document.getElementById('update-fiyat').value,
     };
 
-    // Güncelleme isteği
+    // PATCH isteğini gönder
     fetch(`http://localhost:3000/urun/${id}`, {
         method: 'PATCH',
         headers: {
             'Content-Type': 'application/json',
         },
-        body: JSON.stringify(formData),
+        body: JSON.stringify({
+            ad: document.getElementById('update-ad').value,
+            marka: document.getElementById('update-marka').value,
+            adet: document.getElementById('update-adet').value,
+            fiyat: document.getElementById('update-fiyat').value,
+        }),
     })
     .then(response => response.json())
     .then(data => {
@@ -56,13 +61,14 @@ document.getElementById('update-form').addEventListener('submit', function(event
     });
 });
 
+
 document.getElementById('delete-form').addEventListener('submit', function(event) {
     event.preventDefault(); // Formun varsayılan submit davranışını engelle
 
     const id = document.getElementById('delete-id').value;
 
     // Silme isteği
-    fetch(`http://localhost:3000/urun/id`, {
+    fetch(`http://localhost:3000/urun/${id}`, {
         method: 'DELETE',
     })
     .then(response => response.json())
