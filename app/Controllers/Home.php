@@ -6,7 +6,7 @@ class Home extends BaseController
 {
     public function index(): string
     {
-        return view('hakkimizda.php');
+        return view('urun.php');
     }
     public function login()
     {
