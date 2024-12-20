@@ -1,0 +1,97 @@
+CRITICAL - 2024-12-17 18:09:59 --> Undefined variable: urunler
+in APPPATH\Views\admin_panel.php on line 41.
+ 1 APPPATH\Views\admin_panel.php(41): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: urunler', 'C:\\wamp64\\www\\finalProje\\app\\Views\\admin_panel.php', 41, [])
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\wamp64\\www\\finalProje\\app\\Views\\admin_panel.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('admin_panel', [], true)
+ 5 APPPATH\Controllers\Admin.php(6): view('admin_panel')
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Admin->index()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-12-17 18:10:07 --> Undefined variable: urunler
+in APPPATH\Views\admin_panel.php on line 41.
+ 1 APPPATH\Views\admin_panel.php(41): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: urunler', 'C:\\wamp64\\www\\finalProje\\app\\Views\\admin_panel.php', 41, [])
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\wamp64\\www\\finalProje\\app\\Views\\admin_panel.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('admin_panel', [], true)
+ 5 APPPATH\Controllers\Admin.php(6): view('admin_panel')
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Admin->index()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-12-17 18:10:08 --> Undefined variable: urunler
+in APPPATH\Views\admin_panel.php on line 41.
+ 1 APPPATH\Views\admin_panel.php(41): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: urunler', 'C:\\wamp64\\www\\finalProje\\app\\Views\\admin_panel.php', 41, [])
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\wamp64\\www\\finalProje\\app\\Views\\admin_panel.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('admin_panel', [], true)
+ 5 APPPATH\Controllers\Admin.php(6): view('admin_panel')
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Admin->index()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-12-17 18:10:59 --> Undefined variable: urunler
+in APPPATH\Views\admin_panel.php on line 41.
+ 1 APPPATH\Views\admin_panel.php(41): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: urunler', 'C:\\wamp64\\www\\finalProje\\app\\Views\\admin_panel.php', 41, [])
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\wamp64\\www\\finalProje\\app\\Views\\admin_panel.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('admin_panel', [], true)
+ 5 APPPATH\Controllers\Admin.php(6): view('admin_panel')
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Admin->index()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-12-17 18:11:00 --> Undefined variable: urunler
+in APPPATH\Views\admin_panel.php on line 41.
+ 1 APPPATH\Views\admin_panel.php(41): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: urunler', 'C:\\wamp64\\www\\finalProje\\app\\Views\\admin_panel.php', 41, [])
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\wamp64\\www\\finalProje\\app\\Views\\admin_panel.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('admin_panel', [], true)
+ 5 APPPATH\Controllers\Admin.php(6): view('admin_panel')
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Admin->index()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-12-17 18:11:00 --> Undefined variable: urunler
+in APPPATH\Views\admin_panel.php on line 41.
+ 1 APPPATH\Views\admin_panel.php(41): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: urunler', 'C:\\wamp64\\www\\finalProje\\app\\Views\\admin_panel.php', 41, [])
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\wamp64\\www\\finalProje\\app\\Views\\admin_panel.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('admin_panel', [], true)
+ 5 APPPATH\Controllers\Admin.php(6): view('admin_panel')
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Admin->index()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-12-17 18:11:00 --> Undefined variable: urunler
+in APPPATH\Views\admin_panel.php on line 41.
+ 1 APPPATH\Views\admin_panel.php(41): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: urunler', 'C:\\wamp64\\www\\finalProje\\app\\Views\\admin_panel.php', 41, [])
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\wamp64\\www\\finalProje\\app\\Views\\admin_panel.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('admin_panel', [], true)
+ 5 APPPATH\Controllers\Admin.php(6): view('admin_panel')
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Admin->index()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-12-17 18:11:01 --> Undefined variable: urunler
+in APPPATH\Views\admin_panel.php on line 41.
+ 1 APPPATH\Views\admin_panel.php(41): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: urunler', 'C:\\wamp64\\www\\finalProje\\app\\Views\\admin_panel.php', 41, [])
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\wamp64\\www\\finalProje\\app\\Views\\admin_panel.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('admin_panel', [], true)
+ 5 APPPATH\Controllers\Admin.php(6): view('admin_panel')
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Admin->index()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-12-17 18:41:42 --> syntax error, unexpected 'endforeach' (T_ENDFOREACH), expecting end of file
+in APPPATH\Views\admin_panel.php on line 54.
+ 1 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('admin_panel', [], true)
+ 3 APPPATH\Controllers\Admin.php(6): view('admin_panel')
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Admin->index()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()

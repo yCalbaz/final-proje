@@ -79,12 +79,15 @@ app.post('/urun', upload.single('resim'), async (req, res) => {
 app.get('/urunler', async (req, res) => {
     try {
         const urunler = await Urun.find({});
-        res.json(urunler);
+        const urunlerWithImageUrl = urunler.map(urun => ({
+            ...urun.toObject(),
+            resimUrl: urun.resim ? `http://localhost:3000/uploads/${urun.resim}` : null
+        }));
+        res.json(urunlerWithImageUrl);
     } catch (err) {
         res.status(500).send('Ürünler alınamadı: ' + err.message);
     }
 });
-
 // Ürün Güncelleme
 app.patch('/urun/:id', async (req, res) => {
     const { id } = req.params;

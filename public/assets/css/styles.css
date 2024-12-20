@@ -1,29 +1,46 @@
+button {
+    display: inline-block;
+    margin: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+
 body {
     font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
 }
 
 .container {
-    width: 800px;
-    margin: auto;
+    width: 90%;
+    max-width: 1200px;
+    margin: 20px auto;
     padding: 20px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
 }
 
 h1 {
     text-align: center;
+    color: #333;
+    margin-bottom: 30px;
 }
 
 form {
-    margin-bottom: 20px;
+    margin-bottom: 30px;
+    display: grid;
+    gap: 10px;
 }
 
 form input {
-    display: block;
-    width: 100%;
     padding: 10px;
-    margin: 10px 0;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 100%;
 }
 
 form button {
@@ -33,6 +50,8 @@ form button {
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
 }
 
 form button:hover {
@@ -40,42 +59,71 @@ form button:hover {
 }
 
 #product-list {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); /* Her satırda 5 ürün */
+    column-gap: 20px; /* Sütunlar arasındaki boşluk */
+    row-gap: 10%; /* Satırlar arasındaki boşluk */
+    justify-content: center; /* Ortala */
+    max-height: 600px; /* Maksimum yükseklik belirleyin */
+    overflow-y: auto; /* Yatayda taşma durumunda kaydırma çubuğu ekleyin */
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
+
 .product-item {
-    flex: 1 1 30%;
+    background-color: #fff;
     border: 1px solid #ddd;
-    border-radius: 5px;
-    margin: 10px;
-    padding: 10px;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    height: 100%; /* Ürün kartlarının aynı boyutta olmasını sağlar */
+}
+
+.product-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.product-item img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 15px;
 }
 
 .product-item h3 {
-    margin: 0;
     font-size: 1.2em;
+    color: #333;
+    margin-bottom: 10px;
 }
 
 .product-item p {
+    color: #555;
+    font-size: 1em;
     margin: 10px 0;
 }
 
 .product-item button {
     padding: 5px 10px;
-    margin-right: 5px;
-    border: none;
+    margin: 5px 0;
     border-radius: 5px;
     cursor: pointer;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    font-size: 14px;
 }
 
 .product-item button:nth-child(4) {
     background-color: #dc3545;
-    color: white;
 }
 
-.product-item button:nth-child(5) {
-    background-color: #007bff;
-    color: white;
+.product-item button:hover {
+    background-color: #0056b3;
 }

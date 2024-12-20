@@ -1,113 +1,89 @@
-document.getElementById('product-form').addEventListener('submit', function(event) {
-    event.preventDefault(); // Formun varsayılan submit davranışını engelle
+const productList = document.getElementById('product-list');
+const updateModal = document.getElementById('update-modal');
 
-    // Form verilerini alalım
-    const formData = new FormData();
-    formData.append('id', document.getElementById('id').value);
-    formData.append('ad', document.getElementById('ad').value);
-    formData.append('marka', document.getElementById('marka').value);
-    formData.append('adet', document.getElementById('adet').value);
-    formData.append('fiyat', document.getElementById('fiyat').value);
-    formData.append('resim', document.getElementById('resim').files[0]); // Resim dosyasını ekle
+// Ürünleri Listele
+// Ürünleri Listele
+async function listProducts() {
+    const response = await fetch('http://localhost:3000/urunler');
+    const products = await response.json();
+    productList.innerHTML = '';
 
-    // AJAX isteği
-    fetch('http://localhost:3000/urun', {
-        method: 'POST',
-        body: formData, // Form verilerini gönder
-    })
-    .then(response => response.json()) // JSON formatında cevap al
-    .then(data => {
-        console.log('Success:', data);
-        alert('Ürün başarıyla eklendi.'); // Başarılıysa mesaj göster
-    })
-    .catch(error => {
-        console.error('Error:', error);
-        alert('Bir hata oluştu: ' + error.message); // Hata durumunda mesaj göster
+    products.forEach(product => {
+        const productElement = `
+            <div class="product-item">
+                <img src="http://localhost:3000/uploads/${product.resim}" alt="${product.ad}">
+                <h3>${product.ad}</h3>
+                <div class="details">
+                    <span>Marka: ${product.marka}</span>
+                    <span>Adet: ${product.adet}</span>
+                    <span>Fiyat: ${product.fiyat}₺</span>
+                </div>
+                <button class="update" onclick="openUpdateModal('${product.id}', '${product.ad}', '${product.marka}', '${product.adet}', '${product.fiyat}')">Güncelle</button>
+                <button class="delete" onclick="deleteProduct('${product.id}')">Sil</button>
+            </div>
+        `;
+        productList.innerHTML += productElement;
     });
-});
-
-document.getElementById('update-form').addEventListener('submit', function(event) {
-    event.preventDefault(); // Formun varsayılan davranışını engelleyin
-
-    const id = document.getElementById('update-id').value; // Güncellemek istediğiniz ürünün ID'si
-    const formData = {
-        ad: document.getElementById('update-ad').value,
-        marka: document.getElementById('update-marka').value,
-        adet: document.getElementById('update-adet').value,
-        fiyat: document.getElementById('update-fiyat').value,
-    };
-
-    // PATCH isteğini gönder
-    fetch(`http://localhost:3000/urun/${id}`, {
-        method: 'PATCH',
-        headers: {
-            'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({
-            ad: document.getElementById('update-ad').value,
-            marka: document.getElementById('update-marka').value,
-            adet: document.getElementById('update-adet').value,
-            fiyat: document.getElementById('update-fiyat').value,
-        }),
-    })
-    .then(response => response.json())
-    .then(data => {
-        console.log('Success:', data);
-        alert('Ürün başarıyla güncellendi.');
-    })
-    .catch(error => {
-        console.error('Error:', error);
-        alert('Bir hata oluştu: ' + error.message);
-    });
-});
+}
 
 
-document.getElementById('delete-form').addEventListener('submit', function(event) {
-    event.preventDefault(); // Formun varsayılan submit davranışını engelle
-
-    const id = document.getElementById('delete-id').value;
-
-    // Silme isteği
-    fetch(`http://localhost:3000/urun/${id}`, {
-        method: 'DELETE',
-    })
-    .then(response => response.json())
-    .then(data => {
-        console.log('Success:', data);
-        alert('Ürün başarıyla silindi.');
-    })
-    .catch(error => {
-        console.error('Error:', error);
-        alert('Bir hata oluştu: ' + error.message);
-    });
-});
-
-document.getElementById('list-products').addEventListener('click', function() {
-    // Ürün listeleme isteği
-    fetch('http://localhost:3000/urun')
-    .then(response => response.json())
-    .then(data => {
-        const productList = document.getElementById('product-list');
-        productList.innerHTML = ''; // Önceki listeyi temizle
-
-        if (data.length === 0) {
-            productList.innerHTML = 'Hiç ürün bulunmamaktadır.';
+// Ürün Sil
+async function deleteProduct(id) {
+    if (confirm('Bu ürünü silmek istediğinize emin misiniz?')) {
+        const response = await fetch(`http://localhost:3000/urun/${id}`, { method: 'DELETE' });
+        if (response.ok) {
+            alert('Ürün başarıyla silindi');
+            listProducts(); // Ürünleri yeniden listele
         } else {
-            data.forEach(urun => {
-                const productItem = document.createElement('div');
-                productItem.innerHTML = `
-                    <strong>${urun.ad}</strong><br>
-                    Marka: ${urun.marka}<br>
-                    Adet: ${urun.adet}<br>
-                    Fiyat: ${urun.fiyat}<br>
-                    ${urun.resim ? `<img src="http://localhost:3000/uploads/${urun.resim}" alt="Ürün Resmi" width="100">` : 'Resim yok'}<br><br>
-                `;
-                productList.appendChild(productItem);
-            });
+            alert('Ürün silinemedi.');
         }
-    })
-    .catch(error => {
-        console.error('Error:', error);
-        alert('Ürünler alınırken bir hata oluştu.');
-    });
+    }
+}
+
+// Güncelleme Modal'ı Açma
+function openUpdateModal(id, ad, marka, adet, fiyat) {
+    document.getElementById('update-id').value = id;
+    document.getElementById('update-ad').value = ad;
+    document.getElementById('update-marka').value = marka;
+    document.getElementById('update-adet').value = adet;
+    document.getElementById('update-fiyat').value = fiyat;
+    updateModal.style.display = 'block';
+}
+
+// Güncelleme Modal'ı Kapatma
+function closeUpdateModal() {
+    updateModal.style.display = 'none';
+}
+
+document.getElementById('update-form').addEventListener('submit', async (e) => {
+  e.preventDefault(); // Sayfanın yenilenmesini engeller
+
+  const id = document.getElementById('update-id').value;  // ID'yi modaldan alıyoruz
+  const ad = document.getElementById('update-ad').value;
+  const marka = document.getElementById('update-marka').value;
+  const adet = document.getElementById('update-adet').value;
+  const fiyat = document.getElementById('update-fiyat').value;
+
+  console.log("Güncellenen Ürün Verisi:", { id, ad, marka, adet, fiyat });  // Verileri kontrol et
+
+  const response = await fetch(`http://localhost:3000/urun/${id}`, {
+      method: 'PATCH',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ ad, marka, adet, fiyat })
+  });
+
+  const responseData = await response.json();  // Yanıtı alıyoruz
+
+  if (response.ok) {
+      alert('Ürün başarıyla güncellendi');
+      listProducts();  // Güncel ürünleri listele
+      closeUpdateModal();  // Modal'ı kapat
+  } else {
+      alert('Güncelleme işlemi başarısız oldu');
+      console.error('Güncelleme hatası:', responseData);
+  }
 });
+
+
+// Sayfa Yüklenince Ürünleri Listele
+document.addEventListener('DOMContentLoaded', listProducts);
