@@ -6,13 +6,56 @@ class Home extends BaseController
 {
     public function index(): string
     {
-        return view('urun.php');
+        return view('anasayfa.php');
     }
     public function login()
     {
         
-            return view('tema/header').view('sayfalar/login').view('tema/footer');
+            return view('sayfalar/login.php');
         
         
     }
+
+    public function uyeol()
+    {
+        
+            return view('sayfalar/uyeol.php');
+        
+        
+    }
+    public function hakkimizda()
+    {
+        
+            return view('sayfalar/hakkimizda.php');
+        
+        
+    }
+    public function anasayfa()
+    {
+        
+            return view('index.php');
+        
+        
+    }
+
+    public function urun()
+    {
+        
+            return view('sayfalar/urun.php');
+        
+        
+    }
+
+    public function iletisim()
+    {
+        
+            return view('sayfalar/iletisim.php');
+        
+        
+    }
+    public function sepet()
+    {
+        
+            return view('sayfalar/sepet.php');
+        }
 }

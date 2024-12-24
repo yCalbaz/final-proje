@@ -2,14 +2,14 @@ const productList = document.getElementById('product-list');
 const updateModal = document.getElementById('update-modal');
 
 // Ürünleri Listele
-// Ürünleri Listele
+// Ürünleri Listele 
 async function listProducts() {
     const response = await fetch('http://localhost:3000/urunler');
     const products = await response.json();
     productList.innerHTML = '';
 
     products.forEach(product => {
-        const productElement = `
+        const productElement = ` 
             <div class="product-item">
                 <img src="http://localhost:3000/uploads/${product.resim}" alt="${product.ad}">
                 <h3>${product.ad}</h3>

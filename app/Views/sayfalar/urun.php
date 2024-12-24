@@ -17,8 +17,8 @@
     <img src="assets/images/elektirikLogo.jpg" alt="KAYZE Logo">
 </div>
 
-<!-- HEADER: MENU + HEROE SECTION -->
-<?php include('tema/header.php'); ?>
+<?php include APPPATH . 'Views/tema/header.php'; ?>
+
 
 <section class="product-section">
    
@@ -27,9 +27,8 @@
     </div>
 </section>
 
-<!-- FOOTER: DEBUG INFO + COPYRIGHTS -->
 
-<?php include('tema/footer.php'); ?>
+
 
 <!-- SCRIPTS -->
 
@@ -42,7 +41,7 @@
         }
     }
 </script>
-
+<?php include APPPATH . 'Views/tema/footer.php'; ?>
 
 <!-- -->
 <script src="assets/js/product-list.js"></script>

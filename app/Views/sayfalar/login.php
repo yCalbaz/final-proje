@@ -22,7 +22,7 @@
                 <input type="possword" name="password" class="login-field" placeholder="Şifre" id="login-pass">
                 <label class="login-field-icon fui-user" for="login-pass"></label>
             </div>
-            <a href="kull_giris.php" class="btn btn-primary btn-large btn-block">Giriş Yap</a>
+            <a href="login.php" class="btn btn-primary btn-large btn-block">Giriş Yap</a>
             <a href="uyeol.php" class="btn btn-primary btn-large btn-block">Kayıt Ol</a>
         </div>
     </div>

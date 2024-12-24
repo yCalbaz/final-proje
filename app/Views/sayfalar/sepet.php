@@ -20,7 +20,7 @@
 
 <!-- HEADER: MENU + HEROE SECTION -->
 
-<?php include('tema/header.php'); ?>
+<?php include APPPATH . 'Views/tema/header.php'; ?>
 
 
 
@@ -73,7 +73,7 @@
 </div>
 
 <!-- FOOTER: DEBUG INFO + COPYRIGHTS -->
-<?php include('tema/footer.php'); ?>
+<?php include APPPATH . 'Views/tema/footer.php'; ?>
 
 <!-- SCRIPTS -->
 <script>

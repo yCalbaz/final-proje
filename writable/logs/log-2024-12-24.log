@@ -1,0 +1,460 @@
+CRITICAL - 2024-12-24 17:52:39 --> syntax error, unexpected '   ' (T_STRING)
+in APPPATH\Controllers\Home.php on line 62.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(285): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\wamp64\\www\\finalProje\\app\\Controllers\\Home.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(263): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Home')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Home')
+ 4 [internal function]: spl_autoload_call('App\\Controllers\\Home')
+ 5 SYSTEMPATH\CodeIgniter.php(877): class_exists('\\App\\Controllers\\Home', true)
+ 6 SYSTEMPATH\CodeIgniter.php(481): CodeIgniter\CodeIgniter->startController()
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-12-24 18:15:51 --> include(tema/header.php): failed to open stream: No such file or directory
+in APPPATH\Views\sayfalar\urun.php on line 21.
+ 1 APPPATH\Views\sayfalar\urun.php(21): CodeIgniter\Debug\Exceptions->errorHandler(2, 'include(tema/header.php): failed to open stream: No such file or directory', 'C:\\wamp64\\www\\finalProje\\app\\Views\\sayfalar\\urun.php', 21, [])
+ 2 APPPATH\Views\sayfalar\urun.php(21): include()
+ 3 SYSTEMPATH\View\View.php(226): include('C:\\wamp64\\www\\finalProje\\app\\Views\\sayfalar\\urun.php')
+ 4 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('sayfalar/urun.php', [], true)
+ 6 APPPATH\Controllers\Home.php(44): view('sayfalar/urun.php')
+ 7 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Home->urun()
+ 8 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-12-24 18:17:20 --> syntax error, unexpected ' ' (T_STRING), expecting ';' or ','
+in APPPATH\Views\sayfalar\urun.php on line 21.
+ 1 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('sayfalar/urun.php', [], true)
+ 3 APPPATH\Controllers\Home.php(44): view('sayfalar/urun.php')
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Home->urun()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-12-24 18:19:15 --> syntax error, unexpected ' ' (T_STRING), expecting ';' or ','
+in APPPATH\Views\sayfalar\urun.php on line 21.
+ 1 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('sayfalar/urun.php', [], true)
+ 3 APPPATH\Controllers\Home.php(44): view('sayfalar/urun.php')
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Home->urun()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-12-24 18:19:16 --> syntax error, unexpected ' ' (T_STRING), expecting ';' or ','
+in APPPATH\Views\sayfalar\urun.php on line 21.
+ 1 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('sayfalar/urun.php', [], true)
+ 3 APPPATH\Controllers\Home.php(44): view('sayfalar/urun.php')
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Home->urun()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-12-24 18:19:17 --> syntax error, unexpected ' ' (T_STRING), expecting ';' or ','
+in APPPATH\Views\sayfalar\urun.php on line 21.
+ 1 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('sayfalar/urun.php', [], true)
+ 3 APPPATH\Controllers\Home.php(44): view('sayfalar/urun.php')
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Home->urun()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-12-24 18:19:17 --> syntax error, unexpected ' ' (T_STRING), expecting ';' or ','
+in APPPATH\Views\sayfalar\urun.php on line 21.
+ 1 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('sayfalar/urun.php', [], true)
+ 3 APPPATH\Controllers\Home.php(44): view('sayfalar/urun.php')
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Home->urun()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-12-24 18:19:18 --> syntax error, unexpected ' ' (T_STRING), expecting ';' or ','
+in APPPATH\Views\sayfalar\urun.php on line 21.
+ 1 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('sayfalar/urun.php', [], true)
+ 3 APPPATH\Controllers\Home.php(44): view('sayfalar/urun.php')
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Home->urun()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-12-24 18:19:18 --> syntax error, unexpected ' ' (T_STRING), expecting ';' or ','
+in APPPATH\Views\sayfalar\urun.php on line 21.
+ 1 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('sayfalar/urun.php', [], true)
+ 3 APPPATH\Controllers\Home.php(44): view('sayfalar/urun.php')
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Home->urun()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-12-24 18:19:18 --> syntax error, unexpected ' ' (T_STRING), expecting ';' or ','
+in APPPATH\Views\sayfalar\urun.php on line 21.
+ 1 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('sayfalar/urun.php', [], true)
+ 3 APPPATH\Controllers\Home.php(44): view('sayfalar/urun.php')
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Home->urun()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-12-24 18:19:18 --> syntax error, unexpected ' ' (T_STRING), expecting ';' or ','
+in APPPATH\Views\sayfalar\urun.php on line 21.
+ 1 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('sayfalar/urun.php', [], true)
+ 3 APPPATH\Controllers\Home.php(44): view('sayfalar/urun.php')
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Home->urun()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-12-24 18:20:47 --> syntax error, unexpected ' ' (T_STRING), expecting ';' or ','
+in APPPATH\Views\sayfalar\urun.php on line 21.
+ 1 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('sayfalar/urun.php', [], true)
+ 3 APPPATH\Controllers\Home.php(44): view('sayfalar/urun.php')
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Home->urun()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-12-24 18:20:48 --> syntax error, unexpected ' ' (T_STRING), expecting ';' or ','
+in APPPATH\Views\sayfalar\urun.php on line 21.
+ 1 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('sayfalar/urun.php', [], true)
+ 3 APPPATH\Controllers\Home.php(44): view('sayfalar/urun.php')
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Home->urun()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-12-24 18:20:48 --> syntax error, unexpected ' ' (T_STRING), expecting ';' or ','
+in APPPATH\Views\sayfalar\urun.php on line 21.
+ 1 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('sayfalar/urun.php', [], true)
+ 3 APPPATH\Controllers\Home.php(44): view('sayfalar/urun.php')
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Home->urun()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-12-24 18:20:48 --> syntax error, unexpected ' ' (T_STRING), expecting ';' or ','
+in APPPATH\Views\sayfalar\urun.php on line 21.
+ 1 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('sayfalar/urun.php', [], true)
+ 3 APPPATH\Controllers\Home.php(44): view('sayfalar/urun.php')
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Home->urun()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-12-24 18:20:48 --> syntax error, unexpected ' ' (T_STRING), expecting ';' or ','
+in APPPATH\Views\sayfalar\urun.php on line 21.
+ 1 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('sayfalar/urun.php', [], true)
+ 3 APPPATH\Controllers\Home.php(44): view('sayfalar/urun.php')
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Home->urun()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-12-24 18:20:49 --> syntax error, unexpected ' ' (T_STRING), expecting ';' or ','
+in APPPATH\Views\sayfalar\urun.php on line 21.
+ 1 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('sayfalar/urun.php', [], true)
+ 3 APPPATH\Controllers\Home.php(44): view('sayfalar/urun.php')
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Home->urun()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-12-24 18:20:49 --> syntax error, unexpected ' ' (T_STRING), expecting ';' or ','
+in APPPATH\Views\sayfalar\urun.php on line 21.
+ 1 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('sayfalar/urun.php', [], true)
+ 3 APPPATH\Controllers\Home.php(44): view('sayfalar/urun.php')
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Home->urun()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-12-24 18:20:49 --> syntax error, unexpected ' ' (T_STRING), expecting ';' or ','
+in APPPATH\Views\sayfalar\urun.php on line 21.
+ 1 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('sayfalar/urun.php', [], true)
+ 3 APPPATH\Controllers\Home.php(44): view('sayfalar/urun.php')
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Home->urun()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-12-24 18:20:49 --> syntax error, unexpected ' ' (T_STRING), expecting ';' or ','
+in APPPATH\Views\sayfalar\urun.php on line 21.
+ 1 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('sayfalar/urun.php', [], true)
+ 3 APPPATH\Controllers\Home.php(44): view('sayfalar/urun.php')
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Home->urun()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-12-24 18:20:49 --> syntax error, unexpected ' ' (T_STRING), expecting ';' or ','
+in APPPATH\Views\sayfalar\urun.php on line 21.
+ 1 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('sayfalar/urun.php', [], true)
+ 3 APPPATH\Controllers\Home.php(44): view('sayfalar/urun.php')
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Home->urun()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-12-24 18:20:49 --> syntax error, unexpected ' ' (T_STRING), expecting ';' or ','
+in APPPATH\Views\sayfalar\urun.php on line 21.
+ 1 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('sayfalar/urun.php', [], true)
+ 3 APPPATH\Controllers\Home.php(44): view('sayfalar/urun.php')
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Home->urun()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-12-24 18:20:55 --> syntax error, unexpected ' ' (T_STRING), expecting ';' or ','
+in APPPATH\Views\sayfalar\urun.php on line 21.
+ 1 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('sayfalar/urun.php', [], true)
+ 3 APPPATH\Controllers\Home.php(44): view('sayfalar/urun.php')
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Home->urun()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-12-24 18:20:55 --> syntax error, unexpected ' ' (T_STRING), expecting ';' or ','
+in APPPATH\Views\sayfalar\urun.php on line 21.
+ 1 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('sayfalar/urun.php', [], true)
+ 3 APPPATH\Controllers\Home.php(44): view('sayfalar/urun.php')
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Home->urun()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-12-24 18:20:56 --> syntax error, unexpected ' ' (T_STRING), expecting ';' or ','
+in APPPATH\Views\sayfalar\urun.php on line 21.
+ 1 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('sayfalar/urun.php', [], true)
+ 3 APPPATH\Controllers\Home.php(44): view('sayfalar/urun.php')
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Home->urun()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-12-24 18:20:56 --> syntax error, unexpected ' ' (T_STRING), expecting ';' or ','
+in APPPATH\Views\sayfalar\urun.php on line 21.
+ 1 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('sayfalar/urun.php', [], true)
+ 3 APPPATH\Controllers\Home.php(44): view('sayfalar/urun.php')
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Home->urun()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-12-24 18:22:58 --> syntax error, unexpected ' ' (T_STRING), expecting ';' or ','
+in APPPATH\Views\sayfalar\urun.php on line 21.
+ 1 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('sayfalar/urun.php', [], true)
+ 3 APPPATH\Controllers\Home.php(44): view('sayfalar/urun.php')
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Home->urun()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-12-24 18:22:58 --> syntax error, unexpected ' ' (T_STRING), expecting ';' or ','
+in APPPATH\Views\sayfalar\urun.php on line 21.
+ 1 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('sayfalar/urun.php', [], true)
+ 3 APPPATH\Controllers\Home.php(44): view('sayfalar/urun.php')
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Home->urun()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-12-24 18:22:59 --> syntax error, unexpected ' ' (T_STRING), expecting ';' or ','
+in APPPATH\Views\sayfalar\urun.php on line 21.
+ 1 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('sayfalar/urun.php', [], true)
+ 3 APPPATH\Controllers\Home.php(44): view('sayfalar/urun.php')
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Home->urun()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-12-24 18:22:59 --> syntax error, unexpected ' ' (T_STRING), expecting ';' or ','
+in APPPATH\Views\sayfalar\urun.php on line 21.
+ 1 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('sayfalar/urun.php', [], true)
+ 3 APPPATH\Controllers\Home.php(44): view('sayfalar/urun.php')
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Home->urun()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-12-24 18:22:59 --> syntax error, unexpected ' ' (T_STRING), expecting ';' or ','
+in APPPATH\Views\sayfalar\urun.php on line 21.
+ 1 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('sayfalar/urun.php', [], true)
+ 3 APPPATH\Controllers\Home.php(44): view('sayfalar/urun.php')
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Home->urun()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-12-24 18:22:59 --> syntax error, unexpected ' ' (T_STRING), expecting ';' or ','
+in APPPATH\Views\sayfalar\urun.php on line 21.
+ 1 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('sayfalar/urun.php', [], true)
+ 3 APPPATH\Controllers\Home.php(44): view('sayfalar/urun.php')
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Home->urun()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-12-24 18:22:59 --> syntax error, unexpected ' ' (T_STRING), expecting ';' or ','
+in APPPATH\Views\sayfalar\urun.php on line 21.
+ 1 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('sayfalar/urun.php', [], true)
+ 3 APPPATH\Controllers\Home.php(44): view('sayfalar/urun.php')
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Home->urun()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-12-24 18:24:00 --> syntax error, unexpected ' ' (T_STRING), expecting ';' or ','
+in APPPATH\Views\sayfalar\urun.php on line 21.
+ 1 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('sayfalar/urun.php', [], true)
+ 3 APPPATH\Controllers\Home.php(44): view('sayfalar/urun.php')
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Home->urun()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-12-24 18:24:01 --> syntax error, unexpected ' ' (T_STRING), expecting ';' or ','
+in APPPATH\Views\sayfalar\urun.php on line 21.
+ 1 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('sayfalar/urun.php', [], true)
+ 3 APPPATH\Controllers\Home.php(44): view('sayfalar/urun.php')
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Home->urun()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-12-24 18:24:01 --> syntax error, unexpected ' ' (T_STRING), expecting ';' or ','
+in APPPATH\Views\sayfalar\urun.php on line 21.
+ 1 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('sayfalar/urun.php', [], true)
+ 3 APPPATH\Controllers\Home.php(44): view('sayfalar/urun.php')
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Home->urun()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-12-24 18:24:01 --> syntax error, unexpected ' ' (T_STRING), expecting ';' or ','
+in APPPATH\Views\sayfalar\urun.php on line 21.
+ 1 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('sayfalar/urun.php', [], true)
+ 3 APPPATH\Controllers\Home.php(44): view('sayfalar/urun.php')
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Home->urun()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-12-24 18:26:19 --> syntax error, unexpected ' ' (T_STRING), expecting ';' or ','
+in APPPATH\Views\sayfalar\urun.php on line 21.
+ 1 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('sayfalar/urun.php', [], true)
+ 3 APPPATH\Controllers\Home.php(44): view('sayfalar/urun.php')
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Home->urun()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-12-24 18:29:27 --> syntax error, unexpected ' ' (T_STRING), expecting ';' or ','
+in APPPATH\Views\sayfalar\hakkimizda.php on line 55.
+ 1 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('sayfalar/hakkimizda.php', [], true)
+ 3 APPPATH\Controllers\Home.php(29): view('sayfalar/hakkimizda.php')
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Home->hakkimizda()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-12-24 18:29:33 --> include(tema/header.php): failed to open stream: No such file or directory
+in APPPATH\Views\sayfalar\iletisim.php on line 20.
+ 1 APPPATH\Views\sayfalar\iletisim.php(20): CodeIgniter\Debug\Exceptions->errorHandler(2, 'include(tema/header.php): failed to open stream: No such file or directory', 'C:\\wamp64\\www\\finalProje\\app\\Views\\sayfalar\\iletisim.php', 20, [])
+ 2 APPPATH\Views\sayfalar\iletisim.php(20): include()
+ 3 SYSTEMPATH\View\View.php(226): include('C:\\wamp64\\www\\finalProje\\app\\Views\\sayfalar\\iletisim.php')
+ 4 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('sayfalar/iletisim.php', [], true)
+ 6 APPPATH\Controllers\Home.php(52): view('sayfalar/iletisim.php')
+ 7 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Home->iletisim()
+ 8 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-12-24 18:30:14 --> syntax error, unexpected ' ' (T_STRING), expecting ';' or ','
+in APPPATH\Views\sayfalar\hakkimizda.php on line 55.
+ 1 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('sayfalar/hakkimizda.php', [], true)
+ 3 APPPATH\Controllers\Home.php(29): view('sayfalar/hakkimizda.php')
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Home->hakkimizda()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-12-24 18:30:39 --> include(tema/footer.php): failed to open stream: No such file or directory
+in APPPATH\Views\sayfalar\hakkimizda.php on line 55.
+ 1 APPPATH\Views\sayfalar\hakkimizda.php(55): CodeIgniter\Debug\Exceptions->errorHandler(2, 'include(tema/footer.php): failed to open stream: No such file or directory', 'C:\\wamp64\\www\\finalProje\\app\\Views\\sayfalar\\hakkimizda.php', 55, [])
+ 2 APPPATH\Views\sayfalar\hakkimizda.php(55): include()
+ 3 SYSTEMPATH\View\View.php(226): include('C:\\wamp64\\www\\finalProje\\app\\Views\\sayfalar\\hakkimizda.php')
+ 4 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('sayfalar/hakkimizda.php', [], true)
+ 6 APPPATH\Controllers\Home.php(29): view('sayfalar/hakkimizda.php')
+ 7 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Home->hakkimizda()
+ 8 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-12-24 18:30:40 --> include(tema/footer.php): failed to open stream: No such file or directory
+in APPPATH\Views\sayfalar\hakkimizda.php on line 55.
+ 1 APPPATH\Views\sayfalar\hakkimizda.php(55): CodeIgniter\Debug\Exceptions->errorHandler(2, 'include(tema/footer.php): failed to open stream: No such file or directory', 'C:\\wamp64\\www\\finalProje\\app\\Views\\sayfalar\\hakkimizda.php', 55, [])
+ 2 APPPATH\Views\sayfalar\hakkimizda.php(55): include()
+ 3 SYSTEMPATH\View\View.php(226): include('C:\\wamp64\\www\\finalProje\\app\\Views\\sayfalar\\hakkimizda.php')
+ 4 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('sayfalar/hakkimizda.php', [], true)
+ 6 APPPATH\Controllers\Home.php(29): view('sayfalar/hakkimizda.php')
+ 7 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Home->hakkimizda()
+ 8 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-12-24 18:30:40 --> include(tema/footer.php): failed to open stream: No such file or directory
+in APPPATH\Views\sayfalar\hakkimizda.php on line 55.
+ 1 APPPATH\Views\sayfalar\hakkimizda.php(55): CodeIgniter\Debug\Exceptions->errorHandler(2, 'include(tema/footer.php): failed to open stream: No such file or directory', 'C:\\wamp64\\www\\finalProje\\app\\Views\\sayfalar\\hakkimizda.php', 55, [])
+ 2 APPPATH\Views\sayfalar\hakkimizda.php(55): include()
+ 3 SYSTEMPATH\View\View.php(226): include('C:\\wamp64\\www\\finalProje\\app\\Views\\sayfalar\\hakkimizda.php')
+ 4 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('sayfalar/hakkimizda.php', [], true)
+ 6 APPPATH\Controllers\Home.php(29): view('sayfalar/hakkimizda.php')
+ 7 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Home->hakkimizda()
+ 8 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-12-24 18:31:03 --> include(tema/header.php): failed to open stream: No such file or directory
+in APPPATH\Views\sayfalar\iletisim.php on line 20.
+ 1 APPPATH\Views\sayfalar\iletisim.php(20): CodeIgniter\Debug\Exceptions->errorHandler(2, 'include(tema/header.php): failed to open stream: No such file or directory', 'C:\\wamp64\\www\\finalProje\\app\\Views\\sayfalar\\iletisim.php', 20, [])
+ 2 APPPATH\Views\sayfalar\iletisim.php(20): include()
+ 3 SYSTEMPATH\View\View.php(226): include('C:\\wamp64\\www\\finalProje\\app\\Views\\sayfalar\\iletisim.php')
+ 4 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('sayfalar/iletisim.php', [], true)
+ 6 APPPATH\Controllers\Home.php(52): view('sayfalar/iletisim.php')
+ 7 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Home->iletisim()
+ 8 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-12-24 18:31:28 --> include(tema/header.php): failed to open stream: No such file or directory
+in APPPATH\Views\sayfalar\iletisim.php on line 19.
+ 1 APPPATH\Views\sayfalar\iletisim.php(19): CodeIgniter\Debug\Exceptions->errorHandler(2, 'include(tema/header.php): failed to open stream: No such file or directory', 'C:\\wamp64\\www\\finalProje\\app\\Views\\sayfalar\\iletisim.php', 19, [])
+ 2 APPPATH\Views\sayfalar\iletisim.php(19): include()
+ 3 SYSTEMPATH\View\View.php(226): include('C:\\wamp64\\www\\finalProje\\app\\Views\\sayfalar\\iletisim.php')
+ 4 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('sayfalar/iletisim.php', [], true)
+ 6 APPPATH\Controllers\Home.php(52): view('sayfalar/iletisim.php')
+ 7 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Home->iletisim()
+ 8 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-12-24 18:31:57 --> include(tema/footer.php): failed to open stream: No such file or directory
+in APPPATH\Views\sayfalar\iletisim.php on line 66.
+ 1 APPPATH\Views\sayfalar\iletisim.php(66): CodeIgniter\Debug\Exceptions->errorHandler(2, 'include(tema/footer.php): failed to open stream: No such file or directory', 'C:\\wamp64\\www\\finalProje\\app\\Views\\sayfalar\\iletisim.php', 66, [])
+ 2 APPPATH\Views\sayfalar\iletisim.php(66): include()
+ 3 SYSTEMPATH\View\View.php(226): include('C:\\wamp64\\www\\finalProje\\app\\Views\\sayfalar\\iletisim.php')
+ 4 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('sayfalar/iletisim.php', [], true)
+ 6 APPPATH\Controllers\Home.php(52): view('sayfalar/iletisim.php')
+ 7 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Home->iletisim()
+ 8 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-12-24 18:32:37 --> include(tema/header.php): failed to open stream: No such file or directory
+in APPPATH\Views\sayfalar\sepet.php on line 23.
+ 1 APPPATH\Views\sayfalar\sepet.php(23): CodeIgniter\Debug\Exceptions->errorHandler(2, 'include(tema/header.php): failed to open stream: No such file or directory', 'C:\\wamp64\\www\\finalProje\\app\\Views\\sayfalar\\sepet.php', 23, [])
+ 2 APPPATH\Views\sayfalar\sepet.php(23): include()
+ 3 SYSTEMPATH\View\View.php(226): include('C:\\wamp64\\www\\finalProje\\app\\Views\\sayfalar\\sepet.php')
+ 4 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('sayfalar/sepet.php', [], true)
+ 6 APPPATH\Controllers\Home.php(59): view('sayfalar/sepet.php')
+ 7 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Home->sepet()
+ 8 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()

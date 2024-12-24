@@ -17,7 +17,8 @@
     <img src="assets/images/elektirikLogo.jpg" alt="KAYZE Logo">
 </div>
 <!-- HEADER: MENU + HEROE SECTION -->
-<?php include('tema/header.php'); ?>
+<?= view('tema/header') ?>
+
 
 
 
@@ -50,10 +51,9 @@
 <!-- CONTENT -->
 
 
+<!-- HEADER: MENU + HEROE SECTION -->
+<?php include APPPATH . 'Views/tema/header.php'; ?>
 
-<!-- FOOTER: DEBUG INFO + COPYRIGHTS -->
-
-<?php include('tema/footer.php'); ?>
 
 <!-- SCRIPTS -->
 
