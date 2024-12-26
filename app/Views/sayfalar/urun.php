@@ -19,14 +19,14 @@
 
 <?php include APPPATH . 'Views/tema/header.php'; ?>
 
-
+<div class="container">
 <section class="product-section">
    
     <div id="product-list" class="product-list">
         <!-- Ürünler buraya eklenecek -->
     </div>
 </section>
-
+</div>
 
 
 

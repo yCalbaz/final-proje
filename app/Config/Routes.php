@@ -24,4 +24,6 @@ $routes->get('login', 'AuthController::login'); // Login sayfası için GET rota
 $routes->post('login', 'AuthController::loginUser'); // Giriş işlemi için POST rota
 
 
- 
+$routes->post('cart/add', 'CartController::addToCart');
+$routes->get('cart', 'CartController::viewCart');
+$routes->get('cart/remove/(:num)', 'CartController::removeFromCart/$1'); // Silme işlevi için

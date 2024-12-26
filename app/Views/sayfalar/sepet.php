@@ -2,27 +2,22 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>KAYZfhngngvmödvklkmkkfvlkE</title>
+    <title>Sepet</title>
     <meta name="description" content="The small framework with powerful features">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" type="image/png" href="/favicon.ico">
-    <link rel="stylesheet" href="assets/css/anasayfa.css">
+    <link rel="stylesheet" href="<?= base_url('assets/css/anasayfa.css'); ?>">
     <link rel="stylesheet" href="<?= base_url('css/responsive.css'); ?>">
-
-   
 </head>
 <body>
 
 <!-- LOGO -->
 <div class="logo-container">
-    <img src="assets/images/elektirikLogo.jpg" alt="KAYZE Logo">
+    <img src="<?= base_url('assets/images/elektirikLogo.jpg'); ?>" alt="Logo">
 </div>
 
-<!-- HEADER: MENU + HEROE SECTION -->
-
+<!-- HEADER -->
 <?php include APPPATH . 'Views/tema/header.php'; ?>
-
-
 
 <!-- SEPET BAŞLIK -->
 <div class="container">
@@ -31,48 +26,48 @@
     </div>
 
     <!-- SEPET İÇERİĞİ -->
-    <?php
-    // Sepetteki ürünlerin örnek verileri
-    $cartItems = [
-        ["isim" => "Ürün 1", "fiyat" => 100, "resim" => "urun1.jpg", "adet" => 1],
-        ["isim" => "Ürün 2", "fiyat" => 200, "resim" => "urun2.jpg", "adet" => 2],
-    ];
-
-    if (empty($cartItems)) {
-        echo "<div class='empty-cart'>Sepetiniz boş.</div>";
-    } else {
-        echo "<table class='cart-items'>";
-        echo "<tr><th>Ürün Resmi</th><th>Ürün Adı</th><th>Fiyat</th><th>Adet</th><th>Toplam</th><th>Aksiyon</th></tr>";
-
-        $totalPrice = 0;
-
-        foreach ($cartItems as $item) {
-            $itemTotal = $item['fiyat'] * $item['adet'];
-            $totalPrice += $itemTotal;
-
-            echo "<tr>
-                    <td><img src='". base_url('assets/images/'.$item['resim']) ."' alt='{$item['isim']}'></td>
-                    <td>{$item['isim']}</td>
-                    <td>{$item['fiyat']} TL</td>
-                    <td>{$item['adet']}</td>
-                    <td>{$itemTotal} TL</td>
-                    <td><a href='#' class='btn remove-btn'>Sil</a></td>
-                  </tr>";
-        }
-
-        echo "</table>";
-
-        echo "<div class='total'>Toplam Tutar: {$totalPrice} TL</div>";
-    }
-    ?>
+    <?php if (!empty($cartItems)): ?>
+        <table class="cart-items">
+            <thead>
+                <tr>
+                    <th>Ürün Resmi</th>
+                    <th>Ürün Adı</th>
+                    <th>Fiyat</th>
+                    <th>Adet</th>
+                    <th>Toplam</th>
+                    <th>Aksiyon</th>
+                </tr>
+            </thead>
+            <tbody>
+                <?php $totalPrice = 0; ?>
+                <?php foreach ($cartItems as $item): ?>
+                    <?php $itemTotal = $item['price'] * $item['quantity']; ?>
+                    <tr>
+                        <<td><img src="<?= base_url('assets/images/'.$item['product_id'].'.jpg'); ?>" alt="<?= esc($item['product_name']); ?>"></td>
+                        <td><?= esc($item['product_name']); ?></td>
+                        <td><?= esc($item['price']); ?> TL</td>
+                        <td><?= esc($item['quantity']); ?></td>
+                        <td><?= esc($itemTotal); ?> TL</td>
+                        <td><a href="<?= base_url('/cart/remove/'.$item['id']); ?>" class="btn remove-btn">Sil</a></td>
+                    </tr>
+                    <?php $totalPrice += $itemTotal; ?>
+                <?php endforeach; ?>
+            </tbody>
+        </table>
+        <div class="total">
+            Toplam Tutar: <?= $totalPrice; ?> TL
+        </div>
+    <?php else: ?>
+        <div class="empty-cart">Sepetiniz boş.</div>
+    <?php endif; ?>
 
     <div class="cart-actions">
-        <a href="urunler.php" class="btn">Alışverişe Devam Et</a>
-        <a href="odeme.php" class="btn">Ödeme Yap</a>
+        <a href="<?= base_url('/urunler'); ?>" class="btn">Alışverişe Devam Et</a>
+        <a href="<?= base_url('/odeme'); ?>" class="btn">Ödeme Yap</a>
     </div>
 </div>
 
-<!-- FOOTER: DEBUG INFO + COPYRIGHTS -->
+<!-- FOOTER -->
 <?php include APPPATH . 'Views/tema/footer.php'; ?>
 
 <!-- SCRIPTS -->

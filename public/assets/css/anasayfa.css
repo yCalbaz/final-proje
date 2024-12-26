@@ -152,6 +152,11 @@ body {
 
 
 /* HEADER VE MENÜ */
+.menukaybol{
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
 
 header {
     background-color: #102197;
@@ -190,12 +195,15 @@ nav ul li a:hover {
 .btn-login, .btn-signup {
     background-color: #435fff;
     color: white;
-    padding: 10px 20px;
+    padding: 8px 15px; /* Daha küçük padding */
     border-radius: 5px;
     text-decoration: none;
     font-weight: bold;
     transition: background-color 0.3s ease;
-    margin-left: 10px;
+    display: inline-block;
+    font-size: 14px; /* Daha küçük yazı boyutu */
+    
+    box-sizing: border-box; /* Padding ve margin uyumu için */
 }
 
 .btn-login:hover, .btn-signup:hover {
@@ -312,8 +320,9 @@ footer {
     margin-top: 20px;
 }
 
+
 /* MOBİL UYUMLULUK */
-@media (max-width: 768px) {
+@media (max-width: 1100px) {
     .slider-container {
         height: 300px;
     }
@@ -323,14 +332,25 @@ footer {
     }
 
     nav ul {
-        flex-direction: column;
-        align-items: center;
+        display: block; /* Gizlemeyi kaldırdık */
+        list-style: none; /* Noktaları kaldır */
+        padding: 0; /* İçerik boşluğunu kaldır */
+        margin: 0; /* Kenar boşluğunu kaldır */
+        color: white; /* Metin rengini beyaz yap */
+       
     }
+
+    
 
     nav ul li {
         margin-bottom: 10px;
     }
+
+    .menukaybol{
+        display: none;
+    }
 }
+
 
 @media (max-width: 480px) {
     .slider-container {
@@ -547,23 +567,3 @@ footer .social-links a {
     display: block;
 }
 
-/* Responsive Tasarım */
-@media (max-width: 768px) {
-    .footer-container {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .footer-section {
-        width: 100%;
-        margin-bottom: 20px;
-    }
-
-    .contact-section {
-        padding: 20px;
-    }
-
-    .contact-form button {
-        width: 100%;
-    }
-}

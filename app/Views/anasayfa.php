@@ -67,7 +67,7 @@
 <!-- CONTENT -->
 
 
-        
+<div class="container">
             <h2>Öne Çıkan Ürünler</h2>
 
             
@@ -77,7 +77,7 @@
        <!-- Ürünler buraya eklenecek -->
    </div>
 </section>
- 
+    </div>
 
 
 
