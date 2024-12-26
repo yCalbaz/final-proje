@@ -52,7 +52,7 @@
 
 
 <!-- HEADER: MENU + HEROE SECTION -->
-<?php include APPPATH . 'Views/tema/header.php'; ?>
+<?php include APPPATH . 'Views/tema/footer.php'; ?>
 
 
 <!-- SCRIPTS -->

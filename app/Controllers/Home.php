@@ -11,7 +11,7 @@ class Home extends BaseController
     public function login()
     {
         
-            return view('sayfalar/login.php');
+            return view('auth/login.php');
         
         
     }
@@ -19,7 +19,7 @@ class Home extends BaseController
     public function uyeol()
     {
         
-            return view('sayfalar/uyeol.php');
+            return view('auth/uyeol.php');
         
         
     }
@@ -33,7 +33,7 @@ class Home extends BaseController
     public function anasayfa()
     {
         
-            return view('index.php');
+            return view('sayfalar/index.php');
         
         
     }

@@ -8,7 +8,7 @@
     <link rel="shortcut icon" type="image/png" href="/favicon.ico">
     <link rel="stylesheet" href="assets/css/anasayfa.css">
     
-    <link rel="stylesheet" href="<?= base_url('css/responsive.css'); ?>"> 
+    <link rel="stylesheet" href="<?= base_url('assets/css/responsive.css'); ?>"> 
 
 </head>
 <body>
@@ -66,34 +66,18 @@
 
 <!-- CONTENT -->
 
-<main>
-        <div class="container">
-            <h2>Öne Çıkan Ürünler</h2>
-            <div class="product-grid">
-                <?php
-                // Örnek ürünler
-                $urunler = [
-                    ["isim" => "Ürün 1", "fiyat" => "100 TL", "resim" => "urun1.jpg"],
-                    ["isim" => "Ürün 2", "fiyat" => "200 TL", "resim" => "urun2.jpg"],
-                    ["isim" => "Ürün 3", "fiyat" => "300 TL", "resim" => "urun3.jpg"],
-                    ["isim" => "Ürün 4", "fiyat" => "400 TL", "resim" => "urun4.jpg"],
-                ];
 
-                // Ürünleri döngü ile listeleme
-                foreach ($urunler as $urun) {
-                    echo "
-                    <div class='product'>
-                        <img src='images/{$urun['resim']}' alt='{$urun['isim']}'>
-                        <h3>{$urun['isim']}</h3>
-                        <p>Fiyat: {$urun['fiyat']}</p>
-                        <a href='#' class='btn'>Sepete Ekle</a>
-                    </div>
-                    ";
-                }
-                ?>
-            </div>
-        </div>
-    </main>
+        
+            <h2>Öne Çıkan Ürünler</h2>
+
+            
+<section class="product-section">
+   
+   <div id="product-list" class="product-list">
+       <!-- Ürünler buraya eklenecek -->
+   </div>
+</section>
+ 
 
 
 
@@ -114,6 +98,6 @@
 </script>
 
 <!-- -->
-
+<script src="assets/js/product-list.js"></script>
 </body>
 </html>
