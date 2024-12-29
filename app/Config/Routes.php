@@ -34,3 +34,10 @@ $routes->post('cart/add/(:num)', 'CartController::addToCart/$1'); // Sepete Ã¼rÃ
 
 
 
+$routes->get('checkout', 'CheckoutController::indexxx');
+$routes->post('checkout/submit', 'CheckoutController::submit');
+
+$routes->get('checkout/success', 'CheckoutController::success');
+
+
+$routes->post('cart/removeFromCart/(:num)', 'CartController::removeFromCart/$1');

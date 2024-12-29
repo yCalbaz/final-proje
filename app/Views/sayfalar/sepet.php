@@ -28,6 +28,7 @@ if ($connection->connect_error) {
 
 // `cart` ve `product` tablolarını birleştirerek ürün detaylarını çekme
 $sql = "SELECT 
+            cart.id as cart_id,
             cart.adet, 
             products.id as product_id, 
             products.ad, 
@@ -65,34 +66,48 @@ $connection->close();
 
         <div id="product-list" class="product-list">
             <?php if (!empty($cartItems)): ?>
-                <table border="1" style="width: 100%; text-align: center;">
-                    <thead>
-                        <tr>
-                            <th>Ürün Resmi</th>
-                            <th>Ürün Adı</th>
-                            <th>Marka</th>
-                            <th>Fiyat</th>
-                            <th>Adet</th>
-                            <th>Toplam Fiyat</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <?php foreach ($cartItems as $item): ?>
+                <form method="post" action="<?= base_url('cart/process'); ?>">
+                    <table border="1" style="width: 100%; text-align: center;">
+                        <thead>
                             <tr>
-                                <td>
-                                    <img src="<?= base_url('resim/' . $item['resim']); ?>" 
-                                         alt="<?= esc($item['ad']); ?>" 
-                                         width="100">
-                                </td>
-                                <td><?= esc($item['ad']); ?></td>
-                                <td><?= esc($item['marka']); ?></td>
-                                <td><?= esc($item['fiyat']); ?>₺</td>
-                                <td><?= esc($item['adet']); ?></td>
-                                <td><?= esc($item['fiyat'] * $item['adet']); ?>₺</td>
+                                <th>Ürün Resmi</th>
+                                <th>Ürün Adı</th>
+                                <th>Marka</th>
+                                <th>Fiyat</th>
+                                <th>Adet</th>
+                                <th>Toplam Fiyat</th>
+                                <th>İşlem</th>
                             </tr>
-                        <?php endforeach; ?>
-                    </tbody>
-                </table>
+                        </thead>
+                        <tbody>
+                            <?php foreach ($cartItems as $item): ?>
+                                <tr>
+                                    <td>
+                                        <img src="<?= base_url('resim/' . $item['resim']); ?>" 
+                                             alt="<?= esc($item['ad']); ?>" 
+                                             width="100">
+                                    </td>
+                                    <td><?= esc($item['ad']); ?></td>
+                                    <td><?= esc($item['marka']); ?></td>
+                                    <td><?= esc($item['fiyat']); ?>₺</td>
+                                    <td><?= esc($item['adet']); ?></td>
+                                    <td><?= esc($item['fiyat'] * $item['adet']); ?>₺</td>
+                                    <td>
+                                        <!-- Sil Butonu -->
+                                        <form method="post" action="<?= base_url('cart/removeFromCart/'.$item['cart_id']); ?>" style="display:inline;">
+                                            <button type="submit" class="btn btn-danger">Sil</button>
+                                        </form>
+                                    </td>
+                                </tr>
+                            <?php endforeach; ?>
+                        </tbody>
+                    </table>
+
+                    <!-- Ödemeye Geç Butonu -->
+                    <div style="margin-top: 20px; text-align: right;">
+                        <a href="<?= base_url('checkout'); ?>" class="btn btn-primary">Ödemeye Geç</a>
+                    </div>
+                </form>
             <?php else: ?>
                 <p>Sepetiniz boş.</p>
             <?php endif; ?>

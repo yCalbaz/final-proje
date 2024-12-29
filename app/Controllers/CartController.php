@@ -25,6 +25,20 @@ class CartController extends BaseController
         }
     }
 
+    public function __construct()
+    {
+        $this->cartModel = new CartModel();
+    }
+
+    public function removeFromCart($cart_id)
+    {
+        // Sepetteki ürünü sil
+        $this->cartModel->deleteItem($cart_id);
+
+        // Silme işleminden sonra sepet sayfasına yönlendir
+        return redirect()->to('/sepet')->with('message', 'Ürün başarıyla silindi.');
+    }
+
 
     public function viewCart()
 {

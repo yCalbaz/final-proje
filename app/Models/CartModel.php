@@ -40,5 +40,10 @@ class CartModel extends Model
         // Sepetteki tüm ürünleri al
         return $this->findAll();
     }
+    public function deleteItem($cart_id)
+    {
+        // Sepet tablosundan ürünü sil
+        return $this->delete($cart_id);
+    }
 
 }
