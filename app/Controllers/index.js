@@ -8,6 +8,7 @@ const cors = require('cors');
 const multer = require('multer');
 const path = require('path');
 
+
 // Middleware
 app.use(cors());
 app.use(bodyParser.json());
@@ -120,6 +121,8 @@ app.delete('/urun/:id', async (req, res) => {
         res.status(400).send('Silme hatası: ' + err.message);
     }
 });
+
+
 
 // Sunucu Başlatma
 app.listen(port, () => {

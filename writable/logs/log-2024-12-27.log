@@ -1,0 +1,401 @@
+INFO - 2024-12-27 09:30:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-27 09:31:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-27 09:31:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-27 09:31:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-27 11:29:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-27 11:29:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-27 11:29:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-27 11:30:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-27 11:34:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-27 11:34:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-27 11:34:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-27 11:38:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-27 11:38:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-27 11:38:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-27 11:38:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-27 11:38:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-27 11:38:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-27 11:39:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-27 11:39:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-27 11:39:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-27 11:40:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-27 11:40:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-27 11:40:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-27 11:40:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-27 11:40:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-27 11:40:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-27 11:40:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-27 11:42:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-12-27 11:42:05 --> Call to undefined function validation_list_errors()
+in APPPATH\Views\auth\login.php on line 27.
+ 1 SYSTEMPATH\View\View.php(226): include()
+ 2 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('auth/login', [], true)
+ 4 APPPATH\Controllers\AuthController.php(45): view('auth/login')
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\AuthController->login()
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-12-27 11:44:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-12-27 11:44:33 --> Call to undefined function validation_list_errors()
+in APPPATH\Views\auth\login.php on line 26.
+ 1 SYSTEMPATH\View\View.php(226): include()
+ 2 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('auth/login', [], true)
+ 4 APPPATH\Controllers\AuthController.php(45): view('auth/login')
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\AuthController->login()
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-12-27 11:44:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-12-27 11:44:39 --> Call to undefined function validation_list_errors()
+in APPPATH\Views\auth\login.php on line 26.
+ 1 SYSTEMPATH\View\View.php(226): include()
+ 2 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('auth/login', [], true)
+ 4 APPPATH\Controllers\AuthController.php(45): view('auth/login')
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\AuthController->login()
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-12-27 11:44:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-12-27 11:44:43 --> Call to undefined function validation_list_errors()
+in APPPATH\Views\auth\login.php on line 26.
+ 1 SYSTEMPATH\View\View.php(226): include()
+ 2 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('auth/login', [], true)
+ 4 APPPATH\Controllers\AuthController.php(45): view('auth/login')
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\AuthController->login()
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-12-27 11:44:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-12-27 11:44:51 --> Call to undefined function validation_list_errors()
+in APPPATH\Views\auth\login.php on line 26.
+ 1 SYSTEMPATH\View\View.php(226): include()
+ 2 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('auth/login', [], true)
+ 4 APPPATH\Controllers\AuthController.php(45): view('auth/login')
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\AuthController->login()
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-12-27 11:46:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-27 12:06:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-27 12:11:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-27 12:48:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-27 12:52:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-27 12:53:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-27 12:53:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-27 12:54:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-27 12:56:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-27 13:07:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-27 13:08:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-27 13:08:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-27 13:13:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-27 13:14:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-27 13:14:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-27 13:17:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-27 13:25:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-27 13:26:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-27 13:26:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-27 13:27:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-27 13:27:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-27 13:27:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-27 13:27:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-27 13:28:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-27 13:29:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-27 13:29:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-27 13:30:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-27 13:30:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-27 13:32:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-27 13:35:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-27 13:35:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-27 13:35:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-27 13:37:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-27 13:46:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-27 13:47:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-27 13:49:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-27 13:50:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-27 13:51:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-27 13:51:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-27 13:51:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-27 13:55:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-27 13:56:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-27 13:57:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-27 13:57:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-27 13:57:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-27 13:57:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-27 13:58:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-27 13:59:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-27 13:59:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-27 14:00:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-27 14:00:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-27 14:00:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-27 14:08:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-27 14:14:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-27 14:18:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-27 14:21:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-27 14:23:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-27 14:26:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-27 14:27:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-27 14:29:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-27 14:29:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-27 14:30:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-27 14:30:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-27 14:30:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-27 14:31:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-27 14:31:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-27 14:31:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-27 14:50:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-27 14:51:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-27 14:55:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-27 14:55:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-27 14:55:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-27 15:07:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-27 15:09:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-27 15:10:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-27 15:14:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-27 15:20:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-27 15:21:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-27 19:12:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-27 19:12:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-27 19:12:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-27 19:12:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-27 19:13:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-27 20:20:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-27 20:20:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-27 20:20:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-27 20:20:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-27 20:20:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-12-27 23:28:44 --> Undefined variable: products
+in APPPATH\Views\sayfalar\urun.php on line 20.
+ 1 APPPATH\Views\sayfalar\urun.php(20): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: products', 'C:\\wamp64\\www\\finalProje\\app\\Views\\sayfalar\\urun.php', 20, [])
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\wamp64\\www\\finalProje\\app\\Views\\sayfalar\\urun.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('sayfalar/urun.php', [], true)
+ 5 APPPATH\Controllers\Home.php(44): view('sayfalar/urun.php')
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Home->urun()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-12-27 23:34:54 --> Undefined variable: products
+in APPPATH\Views\sayfalar\urun.php on line 20.
+ 1 APPPATH\Views\sayfalar\urun.php(20): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: products', 'C:\\wamp64\\www\\finalProje\\app\\Views\\sayfalar\\urun.php', 20, [])
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\wamp64\\www\\finalProje\\app\\Views\\sayfalar\\urun.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('sayfalar/urun.php', [], true)
+ 5 APPPATH\Controllers\Home.php(44): view('sayfalar/urun.php')
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Home->urun()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-12-27 23:38:11 --> Undefined variable: products
+in APPPATH\Views\sayfalar\urun.php on line 20.
+ 1 APPPATH\Views\sayfalar\urun.php(20): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: products', 'C:\\wamp64\\www\\finalProje\\app\\Views\\sayfalar\\urun.php', 20, [])
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\wamp64\\www\\finalProje\\app\\Views\\sayfalar\\urun.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('sayfalar/urun.php', [], true)
+ 5 APPPATH\Controllers\Home.php(44): view('sayfalar/urun.php')
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Home->urun()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-12-27 23:38:11 --> Undefined variable: products
+in APPPATH\Views\sayfalar\urun.php on line 20.
+ 1 APPPATH\Views\sayfalar\urun.php(20): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: products', 'C:\\wamp64\\www\\finalProje\\app\\Views\\sayfalar\\urun.php', 20, [])
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\wamp64\\www\\finalProje\\app\\Views\\sayfalar\\urun.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('sayfalar/urun.php', [], true)
+ 5 APPPATH\Controllers\Home.php(44): view('sayfalar/urun.php')
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Home->urun()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-12-27 23:38:12 --> Undefined variable: products
+in APPPATH\Views\sayfalar\urun.php on line 20.
+ 1 APPPATH\Views\sayfalar\urun.php(20): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: products', 'C:\\wamp64\\www\\finalProje\\app\\Views\\sayfalar\\urun.php', 20, [])
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\wamp64\\www\\finalProje\\app\\Views\\sayfalar\\urun.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('sayfalar/urun.php', [], true)
+ 5 APPPATH\Controllers\Home.php(44): view('sayfalar/urun.php')
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Home->urun()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-12-27 23:38:32 --> Undefined variable: products
+in APPPATH\Views\sayfalar\urun.php on line 4.
+ 1 APPPATH\Views\sayfalar\urun.php(4): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: products', 'C:\\wamp64\\www\\finalProje\\app\\Views\\sayfalar\\urun.php', 4, [])
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\wamp64\\www\\finalProje\\app\\Views\\sayfalar\\urun.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('sayfalar/urun.php', [], true)
+ 5 APPPATH\Controllers\Home.php(44): view('sayfalar/urun.php')
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Home->urun()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-12-27 23:38:33 --> Undefined variable: products
+in APPPATH\Views\sayfalar\urun.php on line 4.
+ 1 APPPATH\Views\sayfalar\urun.php(4): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: products', 'C:\\wamp64\\www\\finalProje\\app\\Views\\sayfalar\\urun.php', 4, [])
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\wamp64\\www\\finalProje\\app\\Views\\sayfalar\\urun.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('sayfalar/urun.php', [], true)
+ 5 APPPATH\Controllers\Home.php(44): view('sayfalar/urun.php')
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Home->urun()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-12-27 23:41:48 --> Undefined variable: products
+in APPPATH\Views\sayfalar\urun.php on line 4.
+ 1 APPPATH\Views\sayfalar\urun.php(4): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: products', 'C:\\wamp64\\www\\finalProje\\app\\Views\\sayfalar\\urun.php', 4, [])
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\wamp64\\www\\finalProje\\app\\Views\\sayfalar\\urun.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('sayfalar/urun.php', [], true)
+ 5 APPPATH\Controllers\Home.php(44): view('sayfalar/urun.php')
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Home->urun()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-12-27 23:41:49 --> Undefined variable: products
+in APPPATH\Views\sayfalar\urun.php on line 4.
+ 1 APPPATH\Views\sayfalar\urun.php(4): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: products', 'C:\\wamp64\\www\\finalProje\\app\\Views\\sayfalar\\urun.php', 4, [])
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\wamp64\\www\\finalProje\\app\\Views\\sayfalar\\urun.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('sayfalar/urun.php', [], true)
+ 5 APPPATH\Controllers\Home.php(44): view('sayfalar/urun.php')
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Home->urun()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-12-27 23:44:40 --> Undefined variable: products
+in APPPATH\Views\sayfalar\urun.php on line 4.
+ 1 APPPATH\Views\sayfalar\urun.php(4): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: products', 'C:\\wamp64\\www\\finalProje\\app\\Views\\sayfalar\\urun.php', 4, [])
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\wamp64\\www\\finalProje\\app\\Views\\sayfalar\\urun.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('sayfalar/urun.php', [], true)
+ 5 APPPATH\Controllers\Home.php(44): view('sayfalar/urun.php')
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Home->urun()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-12-27 23:44:41 --> Undefined variable: products
+in APPPATH\Views\sayfalar\urun.php on line 4.
+ 1 APPPATH\Views\sayfalar\urun.php(4): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: products', 'C:\\wamp64\\www\\finalProje\\app\\Views\\sayfalar\\urun.php', 4, [])
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\wamp64\\www\\finalProje\\app\\Views\\sayfalar\\urun.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('sayfalar/urun.php', [], true)
+ 5 APPPATH\Controllers\Home.php(44): view('sayfalar/urun.php')
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Home->urun()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-12-27 23:47:16 --> Undefined variable: products
+in APPPATH\Views\sayfalar\urun.php on line 4.
+ 1 APPPATH\Views\sayfalar\urun.php(4): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: products', 'C:\\wamp64\\www\\finalProje\\app\\Views\\sayfalar\\urun.php', 4, [])
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\wamp64\\www\\finalProje\\app\\Views\\sayfalar\\urun.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('sayfalar/urun.php', [], true)
+ 5 APPPATH\Controllers\Home.php(44): view('sayfalar/urun.php')
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Home->urun()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-12-27 23:47:59 --> Undefined variable: products
+in APPPATH\Views\sayfalar\urun.php on line 4.
+ 1 APPPATH\Views\sayfalar\urun.php(4): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: products', 'C:\\wamp64\\www\\finalProje\\app\\Views\\sayfalar\\urun.php', 4, [])
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\wamp64\\www\\finalProje\\app\\Views\\sayfalar\\urun.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('sayfalar/urun.php', [], true)
+ 5 APPPATH\Controllers\Home.php(44): view('sayfalar/urun.php')
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Home->urun()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-12-27 23:49:08 --> Undefined variable: products
+in APPPATH\Views\sayfalar\urun.php on line 4.
+ 1 APPPATH\Views\sayfalar\urun.php(4): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: products', 'C:\\wamp64\\www\\finalProje\\app\\Views\\sayfalar\\urun.php', 4, [])
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\wamp64\\www\\finalProje\\app\\Views\\sayfalar\\urun.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('sayfalar/urun.php', [], true)
+ 5 APPPATH\Controllers\Home.php(44): view('sayfalar/urun.php')
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Home->urun()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-12-27 23:49:19 --> Undefined variable: products
+in APPPATH\Views\sayfalar\urun.php on line 4.
+ 1 APPPATH\Views\sayfalar\urun.php(4): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: products', 'C:\\wamp64\\www\\finalProje\\app\\Views\\sayfalar\\urun.php', 4, [])
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\wamp64\\www\\finalProje\\app\\Views\\sayfalar\\urun.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('sayfalar/urun.php', [], true)
+ 5 APPPATH\Controllers\Home.php(44): view('sayfalar/urun.php')
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Home->urun()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-12-27 23:50:22 --> Undefined variable: products
+in APPPATH\Views\sayfalar\urun.php on line 4.
+ 1 APPPATH\Views\sayfalar\urun.php(4): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: products', 'C:\\wamp64\\www\\finalProje\\app\\Views\\sayfalar\\urun.php', 4, [])
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\wamp64\\www\\finalProje\\app\\Views\\sayfalar\\urun.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('sayfalar/urun.php', [], true)
+ 5 APPPATH\Controllers\Home.php(44): view('sayfalar/urun.php')
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Home->urun()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-12-27 23:50:53 --> Undefined variable: products
+in APPPATH\Views\sayfalar\urun.php on line 4.
+ 1 APPPATH\Views\sayfalar\urun.php(4): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: products', 'C:\\wamp64\\www\\finalProje\\app\\Views\\sayfalar\\urun.php', 4, [])
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\wamp64\\www\\finalProje\\app\\Views\\sayfalar\\urun.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('sayfalar/urun.php', [], true)
+ 5 APPPATH\Controllers\Home.php(44): view('sayfalar/urun.php')
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Home->urun()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-12-27 23:53:15 --> Undefined variable: products
+in APPPATH\Views\sayfalar\urun.php on line 4.
+ 1 APPPATH\Views\sayfalar\urun.php(4): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: products', 'C:\\wamp64\\www\\finalProje\\app\\Views\\sayfalar\\urun.php', 4, [])
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\wamp64\\www\\finalProje\\app\\Views\\sayfalar\\urun.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('sayfalar/urun.php', [], true)
+ 5 APPPATH\Controllers\Home.php(44): view('sayfalar/urun.php')
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Home->urun()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-12-27 23:53:16 --> Undefined variable: products
+in APPPATH\Views\sayfalar\urun.php on line 4.
+ 1 APPPATH\Views\sayfalar\urun.php(4): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: products', 'C:\\wamp64\\www\\finalProje\\app\\Views\\sayfalar\\urun.php', 4, [])
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\wamp64\\www\\finalProje\\app\\Views\\sayfalar\\urun.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('sayfalar/urun.php', [], true)
+ 5 APPPATH\Controllers\Home.php(44): view('sayfalar/urun.php')
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Home->urun()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-12-27 23:54:08 --> Undefined variable: products
+in APPPATH\Views\sayfalar\urun.php on line 4.
+ 1 APPPATH\Views\sayfalar\urun.php(4): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: products', 'C:\\wamp64\\www\\finalProje\\app\\Views\\sayfalar\\urun.php', 4, [])
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\wamp64\\www\\finalProje\\app\\Views\\sayfalar\\urun.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('sayfalar/urun.php', [], true)
+ 5 APPPATH\Controllers\Home.php(44): view('sayfalar/urun.php')
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Home->urun()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-12-27 23:54:09 --> Undefined variable: products
+in APPPATH\Views\sayfalar\urun.php on line 4.
+ 1 APPPATH\Views\sayfalar\urun.php(4): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: products', 'C:\\wamp64\\www\\finalProje\\app\\Views\\sayfalar\\urun.php', 4, [])
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\wamp64\\www\\finalProje\\app\\Views\\sayfalar\\urun.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('sayfalar/urun.php', [], true)
+ 5 APPPATH\Controllers\Home.php(44): view('sayfalar/urun.php')
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Home->urun()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()

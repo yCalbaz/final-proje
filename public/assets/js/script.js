@@ -9,7 +9,7 @@ async function listProducts() {
     productList.innerHTML = '';
 
     products.forEach(product => {
-        const productElement = ` 
+        const productElement = `
             <div class="product-item">
                 <img src="http://localhost:3000/uploads/${product.resim}" alt="${product.ad}">
                 <h3>${product.ad}</h3>

@@ -23,7 +23,14 @@ $routes->post('auth/register', 'AuthController::register'); // Form gönderimi i
 $routes->get('login', 'AuthController::login'); // Login sayfası için GET rota
 $routes->post('login', 'AuthController::loginUser'); // Giriş işlemi için POST rota
 
+/*
+$routes->get('/', [ProductController::class, 'listProducts']);
+$routes->post('cart/add/(:num)', [CartController::class, 'addToCart']);
+$routes->get('cart', [CartController::class, 'viewCart']);
+*/
+$routes->get('urun', 'ProductController::listProducts'); 
+$routes->get('sepet', 'CartController::viewCart'); // Sepet sayfası için alternatif rota
+$routes->post('cart/add/(:num)', 'CartController::addToCart/$1'); // Sepete ürün ekleme
 
-$routes->post('cart/add', 'CartController::addToCart');
-$routes->get('cart', 'CartController::viewCart');
-$routes->get('cart/remove/(:num)', 'CartController::removeFromCart/$1'); // Silme işlevi için
+
+

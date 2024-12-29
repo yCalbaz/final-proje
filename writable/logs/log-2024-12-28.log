@@ -1,0 +1,514 @@
+INFO - 2024-12-28 07:16:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-28 07:16:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-12-28 07:35:13 --> Undefined variable: products
+in APPPATH\Views\sayfalar\urun.php on line 2.
+ 1 APPPATH\Views\sayfalar\urun.php(2): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: products', 'C:\\wamp64\\www\\finalProje\\app\\Views\\sayfalar\\urun.php', 2, [])
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\wamp64\\www\\finalProje\\app\\Views\\sayfalar\\urun.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('sayfalar/urun.php', [], true)
+ 5 APPPATH\Controllers\Home.php(44): view('sayfalar/urun.php')
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Home->urun()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-12-28 07:40:32 --> Undefined variable: products
+in APPPATH\Views\sayfalar\urun.php on line 2.
+ 1 APPPATH\Views\sayfalar\urun.php(2): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: products', 'C:\\wamp64\\www\\finalProje\\app\\Views\\sayfalar\\urun.php', 2, [])
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\wamp64\\www\\finalProje\\app\\Views\\sayfalar\\urun.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('sayfalar/urun.php', [], true)
+ 5 APPPATH\Controllers\Home.php(44): view('sayfalar/urun.php')
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Home->urun()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-12-28 07:40:33 --> Undefined variable: products
+in APPPATH\Views\sayfalar\urun.php on line 2.
+ 1 APPPATH\Views\sayfalar\urun.php(2): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: products', 'C:\\wamp64\\www\\finalProje\\app\\Views\\sayfalar\\urun.php', 2, [])
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\wamp64\\www\\finalProje\\app\\Views\\sayfalar\\urun.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('sayfalar/urun.php', [], true)
+ 5 APPPATH\Controllers\Home.php(44): view('sayfalar/urun.php')
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Home->urun()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-12-28 07:40:33 --> Undefined variable: products
+in APPPATH\Views\sayfalar\urun.php on line 2.
+ 1 APPPATH\Views\sayfalar\urun.php(2): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: products', 'C:\\wamp64\\www\\finalProje\\app\\Views\\sayfalar\\urun.php', 2, [])
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\wamp64\\www\\finalProje\\app\\Views\\sayfalar\\urun.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('sayfalar/urun.php', [], true)
+ 5 APPPATH\Controllers\Home.php(44): view('sayfalar/urun.php')
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Home->urun()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-12-28 07:40:33 --> Undefined variable: products
+in APPPATH\Views\sayfalar\urun.php on line 2.
+ 1 APPPATH\Views\sayfalar\urun.php(2): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: products', 'C:\\wamp64\\www\\finalProje\\app\\Views\\sayfalar\\urun.php', 2, [])
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\wamp64\\www\\finalProje\\app\\Views\\sayfalar\\urun.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('sayfalar/urun.php', [], true)
+ 5 APPPATH\Controllers\Home.php(44): view('sayfalar/urun.php')
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Home->urun()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-12-28 07:40:33 --> Undefined variable: products
+in APPPATH\Views\sayfalar\urun.php on line 2.
+ 1 APPPATH\Views\sayfalar\urun.php(2): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: products', 'C:\\wamp64\\www\\finalProje\\app\\Views\\sayfalar\\urun.php', 2, [])
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\wamp64\\www\\finalProje\\app\\Views\\sayfalar\\urun.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('sayfalar/urun.php', [], true)
+ 5 APPPATH\Controllers\Home.php(44): view('sayfalar/urun.php')
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Home->urun()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-12-28 07:41:16 --> Undefined variable: products
+in APPPATH\Views\sayfalar\urun.php on line 2.
+ 1 APPPATH\Views\sayfalar\urun.php(2): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: products', 'C:\\wamp64\\www\\finalProje\\app\\Views\\sayfalar\\urun.php', 2, [])
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\wamp64\\www\\finalProje\\app\\Views\\sayfalar\\urun.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('sayfalar/urun.php', [], true)
+ 5 APPPATH\Controllers\Home.php(44): view('sayfalar/urun.php')
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Home->urun()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-12-28 07:41:17 --> Undefined variable: products
+in APPPATH\Views\sayfalar\urun.php on line 2.
+ 1 APPPATH\Views\sayfalar\urun.php(2): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: products', 'C:\\wamp64\\www\\finalProje\\app\\Views\\sayfalar\\urun.php', 2, [])
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\wamp64\\www\\finalProje\\app\\Views\\sayfalar\\urun.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('sayfalar/urun.php', [], true)
+ 5 APPPATH\Controllers\Home.php(44): view('sayfalar/urun.php')
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Home->urun()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-12-28 07:41:46 --> Undefined variable: products
+in APPPATH\Views\sayfalar\urun.php on line 2.
+ 1 APPPATH\Views\sayfalar\urun.php(2): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: products', 'C:\\wamp64\\www\\finalProje\\app\\Views\\sayfalar\\urun.php', 2, [])
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\wamp64\\www\\finalProje\\app\\Views\\sayfalar\\urun.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('sayfalar/urun.php', [], true)
+ 5 APPPATH\Controllers\Home.php(44): view('sayfalar/urun.php')
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Home->urun()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-12-28 07:41:46 --> Undefined variable: products
+in APPPATH\Views\sayfalar\urun.php on line 2.
+ 1 APPPATH\Views\sayfalar\urun.php(2): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: products', 'C:\\wamp64\\www\\finalProje\\app\\Views\\sayfalar\\urun.php', 2, [])
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\wamp64\\www\\finalProje\\app\\Views\\sayfalar\\urun.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('sayfalar/urun.php', [], true)
+ 5 APPPATH\Controllers\Home.php(44): view('sayfalar/urun.php')
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Home->urun()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-12-28 07:41:46 --> Undefined variable: products
+in APPPATH\Views\sayfalar\urun.php on line 2.
+ 1 APPPATH\Views\sayfalar\urun.php(2): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: products', 'C:\\wamp64\\www\\finalProje\\app\\Views\\sayfalar\\urun.php', 2, [])
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\wamp64\\www\\finalProje\\app\\Views\\sayfalar\\urun.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('sayfalar/urun.php', [], true)
+ 5 APPPATH\Controllers\Home.php(44): view('sayfalar/urun.php')
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Home->urun()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-12-28 07:41:47 --> Undefined variable: products
+in APPPATH\Views\sayfalar\urun.php on line 2.
+ 1 APPPATH\Views\sayfalar\urun.php(2): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: products', 'C:\\wamp64\\www\\finalProje\\app\\Views\\sayfalar\\urun.php', 2, [])
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\wamp64\\www\\finalProje\\app\\Views\\sayfalar\\urun.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('sayfalar/urun.php', [], true)
+ 5 APPPATH\Controllers\Home.php(44): view('sayfalar/urun.php')
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Home->urun()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-12-28 07:44:06 --> Invalid file: "layout/template.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('layout/template.php')
+ 2 SYSTEMPATH\View\View.php(242): CodeIgniter\View\View->render('layout/template', [], true)
+ 3 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('sayfalar/urun.php', [], true)
+ 4 APPPATH\Controllers\Home.php(44): view('sayfalar/urun.php')
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Home->urun()
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-12-28 07:44:23 --> Invalid file: "layout/template.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('layout/template.php')
+ 2 SYSTEMPATH\View\View.php(242): CodeIgniter\View\View->render('layout/template', [], true)
+ 3 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('sayfalar/urun.php', [], true)
+ 4 APPPATH\Controllers\Home.php(44): view('sayfalar/urun.php')
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Home->urun()
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-12-28 07:44:24 --> Invalid file: "layout/template.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('layout/template.php')
+ 2 SYSTEMPATH\View\View.php(242): CodeIgniter\View\View->render('layout/template', [], true)
+ 3 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('sayfalar/urun.php', [], true)
+ 4 APPPATH\Controllers\Home.php(44): view('sayfalar/urun.php')
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Home->urun()
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-12-28 07:44:24 --> Invalid file: "layout/template.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('layout/template.php')
+ 2 SYSTEMPATH\View\View.php(242): CodeIgniter\View\View->render('layout/template', [], true)
+ 3 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('sayfalar/urun.php', [], true)
+ 4 APPPATH\Controllers\Home.php(44): view('sayfalar/urun.php')
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Home->urun()
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-12-28 07:47:04 --> View themes, no current section.
+in SYSTEMPATH\View\View.php on line 423.
+ 1 APPPATH\Views\sayfalar\urun.php(26): CodeIgniter\View\View->endSection()
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\wamp64\\www\\finalProje\\app\\Views\\sayfalar\\urun.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('sayfalar/urun.php', [], true)
+ 5 APPPATH\Controllers\Home.php(44): view('sayfalar/urun.php')
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Home->urun()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-12-28 09:14:17 --> Trying to get property 'num_rows' of non-object
+in APPPATH\Views\sayfalar\urun.php on line 15.
+ 1 APPPATH\Views\sayfalar\urun.php(15): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get property \'num_rows\' of non-object', 'C:\\wamp64\\www\\finalProje\\app\\Views\\sayfalar\\urun.php', 15, [...])
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\wamp64\\www\\finalProje\\app\\Views\\sayfalar\\urun.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('sayfalar/urun.php', [], true)
+ 5 APPPATH\Controllers\Home.php(44): view('sayfalar/urun.php')
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Home->urun()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-12-28 09:43:47 --> Undefined variable: cartItems
+in APPPATH\Views\sayfalar\sepet.php on line 23.
+ 1 APPPATH\Views\sayfalar\sepet.php(23): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: cartItems', 'C:\\wamp64\\www\\finalProje\\app\\Views\\sayfalar\\sepet.php', 23, [...])
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\wamp64\\www\\finalProje\\app\\Views\\sayfalar\\sepet.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('sayfalar/sepet', [], true)
+ 5 APPPATH\Controllers\Home.php(59): view('sayfalar/sepet')
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Home->sepet()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-12-28 10:08:54 --> syntax error, unexpected 'else' (T_ELSE)
+in APPPATH\Views\sayfalar\sepet.php on line 47.
+ 1 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('sayfalar/sepet', [], true)
+ 3 APPPATH\Controllers\Home.php(59): view('sayfalar/sepet')
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Home->sepet()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-12-28 11:26:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-28 11:26:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-28 11:32:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-28 11:32:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-28 11:39:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-28 11:43:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-28 11:47:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-28 11:47:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-28 11:47:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-28 11:48:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-28 11:48:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-12-28 11:48:11 --> Call to undefined method App\Models\CartModel::addToCart
+in SYSTEMPATH\Model.php on line 873.
+ 1 APPPATH\Controllers\CartController.php(21): CodeIgniter\Model->__call('addToCart', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\CartController->addToCart()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CartController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-12-28 11:53:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-28 11:53:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-28 11:53:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-28 12:03:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-28 12:06:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-28 12:06:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-28 12:06:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-28 12:06:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-28 12:06:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-28 12:14:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-28 12:15:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-28 12:15:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-28 12:15:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-28 12:17:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-28 12:18:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-28 12:18:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-28 12:20:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-28 12:20:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-28 12:21:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-28 12:21:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-28 12:21:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-28 12:21:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-28 12:22:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-28 12:22:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-28 12:22:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-28 12:33:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-28 12:33:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-28 12:33:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-28 12:33:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-28 12:33:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-28 12:33:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-28 12:33:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-28 12:33:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-28 12:33:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-28 12:33:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-28 12:33:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-28 12:33:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-28 12:33:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-28 12:33:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-28 12:38:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-28 12:40:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-28 12:40:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-28 12:40:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-28 12:45:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-28 12:45:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-28 12:45:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-28 12:45:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-28 12:45:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-28 12:46:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-28 12:46:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-28 12:46:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-28 12:48:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-28 12:53:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-28 12:53:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-28 12:56:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-28 12:56:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-28 12:56:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-28 12:57:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-28 12:57:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-28 12:59:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-28 13:00:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-28 13:02:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-28 13:02:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-28 13:03:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-28 13:03:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-28 13:04:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-28 13:07:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-28 13:07:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-28 13:07:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-28 13:07:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-28 13:07:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-28 13:08:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-28 13:08:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-28 13:17:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-28 13:19:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-28 13:20:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-28 13:22:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-28 13:22:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-28 13:22:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-28 13:23:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-28 13:23:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-28 13:23:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-28 13:23:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-28 13:25:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-28 13:25:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-28 16:30:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-28 16:30:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-28 16:32:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-28 16:33:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-28 16:33:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-28 16:33:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-28 16:33:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-28 16:33:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-28 17:05:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-28 17:05:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-28 17:05:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-28 17:05:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-28 17:05:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-28 17:05:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-28 17:09:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-28 17:09:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-28 17:29:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-28 17:29:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-28 17:29:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-28 17:29:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-28 17:31:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-28 17:37:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-28 17:42:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-28 17:42:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-28 17:42:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-28 17:42:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-28 17:43:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-28 17:43:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-28 17:43:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-28 17:49:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-28 18:29:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-28 18:43:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-28 18:44:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-28 18:44:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-28 18:45:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-28 18:45:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-28 18:54:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-28 18:54:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-28 18:54:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-28 18:54:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-28 18:54:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-28 18:54:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-28 18:54:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-28 18:54:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-28 18:55:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-28 18:55:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-28 18:55:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-28 20:14:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-12-28 20:14:38 --> syntax error, unexpected '<', expecting end of file
+in APPPATH\Views\sayfalar\sepet.php on line 2.
+ 1 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('sayfalar/sepet.php', [], true)
+ 3 APPPATH\Controllers\Home.php(59): view('sayfalar/sepet.php')
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Home->sepet()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-12-28 20:15:45 --> syntax error, unexpected '<', expecting end of file
+in APPPATH\Views\sayfalar\sepet.php on line 2.
+ 1 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('sayfalar/sepet.php', [], true)
+ 3 APPPATH\Controllers\Home.php(59): view('sayfalar/sepet.php')
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Home->sepet()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-12-28 20:15:46 --> syntax error, unexpected '<', expecting end of file
+in APPPATH\Views\sayfalar\sepet.php on line 2.
+ 1 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('sayfalar/sepet.php', [], true)
+ 3 APPPATH\Controllers\Home.php(59): view('sayfalar/sepet.php')
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Home->sepet()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-12-28 20:15:46 --> syntax error, unexpected '<', expecting end of file
+in APPPATH\Views\sayfalar\sepet.php on line 2.
+ 1 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('sayfalar/sepet.php', [], true)
+ 3 APPPATH\Controllers\Home.php(59): view('sayfalar/sepet.php')
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Home->sepet()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-12-28 20:15:46 --> syntax error, unexpected '<', expecting end of file
+in APPPATH\Views\sayfalar\sepet.php on line 2.
+ 1 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('sayfalar/sepet.php', [], true)
+ 3 APPPATH\Controllers\Home.php(59): view('sayfalar/sepet.php')
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Home->sepet()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-12-28 20:16:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-28 20:16:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-28 20:16:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-28 20:16:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-28 20:16:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-28 20:16:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-28 20:16:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-28 20:23:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-28 20:23:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-12-28 21:27:31 --> Return value of CodeIgniter\Router\RouteCollection::processArrayCallableSyntax() must be of the type string, array returned
+in SYSTEMPATH\Router\RouteCollection.php on line 1553.
+ 1 SYSTEMPATH\Router\RouteCollection.php(1417): CodeIgniter\Router\RouteCollection->processArrayCallableSyntax('/', [...])
+ 2 SYSTEMPATH\Router\RouteCollection.php(1013): CodeIgniter\Router\RouteCollection->create('get', '/', [...], null)
+ 3 APPPATH\Config\Routes.php(26): CodeIgniter\Router\RouteCollection->get('/', [...])
+ 4 SYSTEMPATH\Router\RouteCollection.php(339): require('C:\\wamp64\\www\\finalProje\\app\\Config\\Routes.php')
+ 5 SYSTEMPATH\CodeIgniter.php(787): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 6 SYSTEMPATH\CodeIgniter.php(442): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-12-28 21:27:40 --> Return value of CodeIgniter\Router\RouteCollection::processArrayCallableSyntax() must be of the type string, array returned
+in SYSTEMPATH\Router\RouteCollection.php on line 1553.
+ 1 SYSTEMPATH\Router\RouteCollection.php(1417): CodeIgniter\Router\RouteCollection->processArrayCallableSyntax('/', [...])
+ 2 SYSTEMPATH\Router\RouteCollection.php(1013): CodeIgniter\Router\RouteCollection->create('get', '/', [...], null)
+ 3 APPPATH\Config\Routes.php(26): CodeIgniter\Router\RouteCollection->get('/', [...])
+ 4 SYSTEMPATH\Router\RouteCollection.php(339): require('C:\\wamp64\\www\\finalProje\\app\\Config\\Routes.php')
+ 5 SYSTEMPATH\CodeIgniter.php(787): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 6 SYSTEMPATH\CodeIgniter.php(442): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-12-28 21:27:42 --> Return value of CodeIgniter\Router\RouteCollection::processArrayCallableSyntax() must be of the type string, array returned
+in SYSTEMPATH\Router\RouteCollection.php on line 1553.
+ 1 SYSTEMPATH\Router\RouteCollection.php(1417): CodeIgniter\Router\RouteCollection->processArrayCallableSyntax('/', [...])
+ 2 SYSTEMPATH\Router\RouteCollection.php(1013): CodeIgniter\Router\RouteCollection->create('get', '/', [...], null)
+ 3 APPPATH\Config\Routes.php(26): CodeIgniter\Router\RouteCollection->get('/', [...])
+ 4 SYSTEMPATH\Router\RouteCollection.php(339): require('C:\\wamp64\\www\\finalProje\\app\\Config\\Routes.php')
+ 5 SYSTEMPATH\CodeIgniter.php(787): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 6 SYSTEMPATH\CodeIgniter.php(442): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-12-28 21:27:43 --> Return value of CodeIgniter\Router\RouteCollection::processArrayCallableSyntax() must be of the type string, array returned
+in SYSTEMPATH\Router\RouteCollection.php on line 1553.
+ 1 SYSTEMPATH\Router\RouteCollection.php(1417): CodeIgniter\Router\RouteCollection->processArrayCallableSyntax('/', [...])
+ 2 SYSTEMPATH\Router\RouteCollection.php(1013): CodeIgniter\Router\RouteCollection->create('get', '/', [...], null)
+ 3 APPPATH\Config\Routes.php(26): CodeIgniter\Router\RouteCollection->get('/', [...])
+ 4 SYSTEMPATH\Router\RouteCollection.php(339): require('C:\\wamp64\\www\\finalProje\\app\\Config\\Routes.php')
+ 5 SYSTEMPATH\CodeIgniter.php(787): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 6 SYSTEMPATH\CodeIgniter.php(442): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-12-28 21:27:45 --> Return value of CodeIgniter\Router\RouteCollection::processArrayCallableSyntax() must be of the type string, array returned
+in SYSTEMPATH\Router\RouteCollection.php on line 1553.
+ 1 SYSTEMPATH\Router\RouteCollection.php(1417): CodeIgniter\Router\RouteCollection->processArrayCallableSyntax('/', [...])
+ 2 SYSTEMPATH\Router\RouteCollection.php(1013): CodeIgniter\Router\RouteCollection->create('get', '/', [...], null)
+ 3 APPPATH\Config\Routes.php(26): CodeIgniter\Router\RouteCollection->get('/', [...])
+ 4 SYSTEMPATH\Router\RouteCollection.php(339): require('C:\\wamp64\\www\\finalProje\\app\\Config\\Routes.php')
+ 5 SYSTEMPATH\CodeIgniter.php(787): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 6 SYSTEMPATH\CodeIgniter.php(442): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-12-28 21:56:09 --> syntax error, unexpected ''viewCart'' (T_CONSTANT_ENCAPSED_STRING), expecting ']'
+in APPPATH\Config\Routes.php on line 29.
+ 1 SYSTEMPATH\CodeIgniter.php(787): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 2 SYSTEMPATH\CodeIgniter.php(442): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-12-28 22:22:55 --> mysqli_sql_exception: Column 'ad' cannot be null in C:\wamp64\www\finalProje\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\wamp64\www\finalProje\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `pr...', 0)
+#1 C:\wamp64\www\finalProje\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `pr...')
+#2 C:\wamp64\www\finalProje\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `pr...')
+#3 C:\wamp64\www\finalProje\system\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `pr...', Array, false)
+#4 C:\wamp64\www\finalProje\system\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\wamp64\www\finalProje\system\BaseModel.php(788): CodeIgniter\Model->doInsert(Array)
+#6 C:\wamp64\www\finalProje\system\Model.php(715): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\wamp64\www\finalProje\app\Controllers\ProductController.php(32): CodeIgniter\Model->insert(Array)
+#8 C:\wamp64\www\finalProje\system\CodeIgniter.php(919): App\Controllers\ProductController->addProduct()
+#9 C:\wamp64\www\finalProje\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductController))
+#10 C:\wamp64\www\finalProje\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\wamp64\www\finalProje\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2024-12-28 22:22:55 --> Column 'ad' cannot be null
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `products` (`ad`, `marka`, `fiyat`, `resim`) VALUES (:ad:, :marka:, :fiyat:, :resim:)', [...], false)
+ 2 SYSTEMPATH\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(788): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(715): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\ProductController.php(32): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\ProductController->addProduct()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-12-28 22:24:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-12-28 22:24:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-12-28 22:24:18 --> syntax error, unexpected 'endforeach' (T_ENDFOREACH), expecting elseif (T_ELSEIF) or else (T_ELSE) or endif (T_ENDIF)
+in APPPATH\Views\sayfalar\urun.php on line 67.
+ 1 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('sayfalar/urun.php', [], true)
+ 3 APPPATH\Controllers\Home.php(44): view('sayfalar/urun.php')
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Home->urun()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
