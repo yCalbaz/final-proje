@@ -1,6 +1,6 @@
 const productList = document.getElementById('product-list');
 const updateModal = document.getElementById('update-modal');
-
+ 
 // Ürünleri Listele
 // Ürünleri Listele 
 async function listProducts() {
@@ -87,3 +87,5 @@ document.getElementById('update-form').addEventListener('submit', async (e) => {
 
 // Sayfa Yüklenince Ürünleri Listele
 document.addEventListener('DOMContentLoaded', listProducts);
+
+

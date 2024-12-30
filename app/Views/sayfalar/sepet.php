@@ -8,12 +8,14 @@
     <link rel="shortcut icon" type="image/png" href="/favicon.ico">
     <link rel="stylesheet" href="assets/css/anasayfa.css">
     <link rel="stylesheet" href="<?= base_url('assets/css/responsive.css'); ?>">
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
 
 <!-- LOGO -->
-<div class="logo-container">
-    <img src="assets/images/elektirikLogo.jpg" alt="KAYZE Logo">
+<div class="logo-container text-center my-4">
+    <img src="assets/images/KayzeLogo.png" alt="KAYZE Logo" class="img-fluid">
 </div>
 
 <?php include APPPATH . 'Views/tema/header.php'; ?>
@@ -53,9 +55,10 @@ if ($result->num_rows > 0) {
 $connection->close();
 ?>
 
-<div class="container">
+<!-- Center the cart section -->
+<div class="container mt-5">
     <section class="product-section">
-        <h1>Sepet</h1>
+        <h1 class="text-center mb-4">Sepetiniz</h1>
 
         <!-- Success Message -->
         <?php if (session()->getFlashdata('message')): ?>
@@ -67,49 +70,52 @@ $connection->close();
         <div id="product-list" class="product-list">
             <?php if (!empty($cartItems)): ?>
                 <form method="post" action="<?= base_url('cart/process'); ?>">
-                    <table border="1" style="width: 100%; text-align: center;">
-                        <thead>
-                            <tr>
-                                <th>Ürün Resmi</th>
-                                <th>Ürün Adı</th>
-                                <th>Marka</th>
-                                <th>Fiyat</th>
-                                <th>Adet</th>
-                                <th>Toplam Fiyat</th>
-                                <th>İşlem</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <?php foreach ($cartItems as $item): ?>
+                    <div class="table-responsive">
+                        <table class="table table-bordered table-striped text-center">
+                            <thead class="thead-dark">
                                 <tr>
-                                    <td>
-                                        <img src="<?= base_url('resim/' . $item['resim']); ?>" 
-                                             alt="<?= esc($item['ad']); ?>" 
-                                             width="100">
-                                    </td>
-                                    <td><?= esc($item['ad']); ?></td>
-                                    <td><?= esc($item['marka']); ?></td>
-                                    <td><?= esc($item['fiyat']); ?>₺</td>
-                                    <td><?= esc($item['adet']); ?></td>
-                                    <td><?= esc($item['fiyat'] * $item['adet']); ?>₺</td>
-                                    <td>
-                                        <!-- Sil Butonu -->
-                                        <form method="post" action="<?= base_url('cart/removeFromCart/'.$item['cart_id']); ?>" style="display:inline;">
-                                            <button type="submit" class="btn btn-danger">Sil</button>
-                                        </form>
-                                    </td>
+                                    <th>Ürün Resmi</th>
+                                    <th>Ürün Adı</th>
+                                    <th>Marka</th>
+                                    <th>Fiyat</th>
+                                    <th>Adet</th>
+                                    <th>Toplam Fiyat</th>
+                                    <th>İşlem</th>
                                 </tr>
-                            <?php endforeach; ?>
-                        </tbody>
-                    </table>
+                            </thead>
+                            <tbody>
+                                <?php foreach ($cartItems as $item): ?>
+                                    <tr>
+                                        <td>
+                                            <img src="<?= base_url('resim/' . $item['resim']); ?>" 
+                                                 alt="<?= esc($item['ad']); ?>" 
+                                                 class="img-fluid" 
+                                                 style="max-width: 100px;">
+                                        </td>
+                                        <td><?= esc($item['ad']); ?></td>
+                                        <td><?= esc($item['marka']); ?></td>
+                                        <td><?= esc($item['fiyat']); ?>₺</td>
+                                        <td><?= esc($item['adet']); ?></td>
+                                        <td><?= esc($item['fiyat'] * $item['adet']); ?>₺</td>
+                                        <td>
+                                            <!-- Sil Butonu -->
+                                            <form method="post" action="<?= base_url('cart/removeFromCart/'.$item['cart_id']); ?>" style="display:inline;">
+                                                <button type="submit" class="btn btn-danger btn-sm">Sil</button>
+                                            </form>
+                                        </td>
+                                    </tr>
+                                <?php endforeach; ?>
+                            </tbody>
+                        </table>
+                    </div>
 
                     <!-- Ödemeye Geç Butonu -->
-                    <div style="margin-top: 20px; text-align: right;">
-                        <a href="<?= base_url('checkout'); ?>" class="btn btn-primary">Ödemeye Geç</a>
+                    <div class="text-right mt-4">
+                        <a href="<?= base_url('checkout'); ?>" class="btn btn-primary btn-lg">Ödemeye Geç</a>
                     </div>
                 </form>
             <?php else: ?>
-                <p>Sepetiniz boş.</p>
+                <p class="text-center">Sepetiniz boş.</p>
             <?php endif; ?>
         </div>
     </section>
@@ -117,5 +123,9 @@ $connection->close();
 
 <?php include APPPATH . 'Views/tema/footer.php'; ?>
 
+<!-- Bootstrap JS and dependencies -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>

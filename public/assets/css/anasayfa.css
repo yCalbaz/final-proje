@@ -567,3 +567,33 @@ footer .social-links a {
     display: block;
 }
 
+.reklam-banner {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #ff4757;
+    color: white;
+    text-align: center;
+    overflow: hidden; /* Taşan metni gizler */
+    padding: 10px 0;
+    z-index: 1000;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2);
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.kayan-yazi {
+    display: inline-block;
+    white-space: nowrap; /* Metni tek satırda tutar */
+    animation: kayan-metni 10s linear infinite; /* Sürekli kayan animasyon */
+}
+
+@keyframes kayan-metni {
+    0% {
+        transform: translateX(100%); /* Sağdan başla */
+    }
+    100% {
+        transform: translateX(-100%); /* Sola kadar kaydır */
+    }
+}

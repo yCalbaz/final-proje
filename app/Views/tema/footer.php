@@ -27,9 +27,9 @@
         <div class="footer-section">
             <h3>Sosyal Medya</h3>
             <div class="social-links">
-                <a href="https://facebook.com" target="_blank"><img src="assets/icons/facebook.png" alt="Facebook"></a>
-                <a href="https://instagram.com" target="_blank"><img src="assets/icons/instagram.png" alt="Instagram"></a>
-                <a href="https://twitter.com" target="_blank"><img src="assets/icons/twitter.png" alt="Twitter"></a>
+                <a href="https://facebook.com" target="_blank"><img src="assets/images/face.png" alt="Facebook"></a>
+                <a href="https://instagram.com" target="_blank"><img src="assets/images/ins.jpg" alt="Instagram"></a>
+                <a href="https://twitter.com" target="_blank"><img src="assets/images/tw.png" alt="Twitter"></a>
             </div>
         </div>
     </div>

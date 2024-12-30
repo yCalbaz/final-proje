@@ -12,9 +12,9 @@
 <body>
 
 <!-- LOGO -->
-<div class="logo-container">
-    <img src="assets/images/elektirikLogo.jpg" alt="KAYZE Logo">
-</div>
+    <div class="logo-container">
+        <img src="assets/images/KayzeLogo.png" alt="KAYZE Logo">
+    </div>
 
 <?php include APPPATH . 'Views/tema/header.php'; ?>
 
@@ -52,11 +52,7 @@
                     </form>
                 </div>
 
-                <!-- Harita -->
-                <div class="map">
-                    <h2>Mağazamızın Konumu</h2>
-                    <iframe src="https://www.google.com/maps/embed/v1/place?q=istanbul&key=YOUR_API_KEY" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-                </div>
+            
             </div>
         </section>
     </main>

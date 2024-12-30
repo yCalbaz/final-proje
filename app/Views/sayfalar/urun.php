@@ -7,14 +7,100 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" type="image/png" href="/favicon.ico">
     <link rel="stylesheet" href="assets/css/anasayfa.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
     <link rel="stylesheet" href="<?= base_url('assets/css/responsive.css'); ?>">
+
+        <style>
+
+    /* Body'ye arka plan görseli eklemek */
+    body {
+    margin: 0;
+    padding: 0;
+    position: relative; /* Arka plan için konumlandırma */
+
+    }
+
+    /* Arka Plan Görselinin Saydamlık Ayarları */
+    body::before {
+    content: ""; /* İçerik boş olacak */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('assets/images/adminarkaplan.jpg'); /* Arka plan görseli */
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    opacity: 0.2; /* Saydamlık oranını buradan ayarlayabilirsiniz */
+    z-index: -1; /* İçeriğin önünde olmasını engeller */
+    }
+
+
+    .products {
+    padding: 20px;
+    text-align: center;
+    }
+
+    .products h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    }
+
+    .product-list {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    }
+
+    .product {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 250px;
+    margin: 10px;
+    text-align: center;
+    }
+
+    .product img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+    }
+
+    .product h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    }
+
+    .product p {
+    font-size: 1.5rem;
+    color: #ff5733;
+    margin-bottom: 15px;
+    }
+
+    .add-to-cart {
+    background-color: #333;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    }
+
+
+
+
+
+    </style>
 </head>
 <body>
 
 <!-- LOGO -->
 <div class="logo-container">
-    <img src="assets/images/elektirikLogo.jpg" alt="KAYZE Logo">
-</div>
+        <img src="assets/images/KayzeLogo.png" alt="KAYZE Logo">
+    </div>
 
 <?php include APPPATH . 'Views/tema/header.php'; ?>
 
@@ -46,7 +132,9 @@ $connection->close();
 ?>
 
 <div class="container">
+
     <section class="product-section">
+    <h2>Ürünler</h2>
         <div class="product-list">
         <?php if (!empty($products)): ?>
     <?php foreach ($products as $product): ?>

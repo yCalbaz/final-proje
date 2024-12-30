@@ -239,6 +239,26 @@
             text-align: center;
         }
 
+        .top-right-button {
+            position: absolute;
+            top: 10px; /* Üstten mesafe */
+            right: 10px; /* Sağdan mesafe */
+            padding: 10px 20px;
+            background-color: #007bff; /* Buton rengi */
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s ease;
+            z-index: 10; /* Arka plan fotoğrafının önünde olması için */
+        }
+
+        .top-right-button:hover {
+            background-color: #0056b3; /* Hover efekti */
+        }
+
+
     </style>
 </head>
 <body>
@@ -249,6 +269,8 @@
 </div>
 
 <div class="container">
+<button class="top-right-button" onclick="window.location.href='anasayfa.php';">Çıkış</button>
+
     <h1>Yönetici Paneli</h1>
 
     <!-- Ürün Ekleme Formu -->

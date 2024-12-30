@@ -13,9 +13,9 @@
 </head>
 <body>
 <!-- LOGO -->
-<div class="logo-container">
-    <img src="assets/images/elektirikLogo.jpg" alt="KAYZE Logo">
-</div>
+    <div class="logo-container">
+        <img src="assets/images/KayzeLogo.png" alt="KAYZE Logo">
+    </div>
 <!-- HEADER: MENU + HEROE SECTION -->
 <?= view('tema/header') ?>
 
