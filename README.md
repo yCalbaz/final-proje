@@ -11,5 +11,9 @@ Eektrik ve elektronik sektorune yonelik
 - **Zehra Saribastanoglu**: Uyelik ve sepete ekleme islemlerinin backend kismini yapacak ve GitHub'i yonetecek kisi.
 - **Yasemin Calbaz**: Urun ekleme silme listeleme arama islemlerinin backend kismini yapacak ve GitHub'i acacak kisi.
 
+## Yönetici Paneline Giriş:
+- **Kullanıcı Adi**: kayzeAdmin
+- **Şifre**:  vyz915aXBcAx
+
 [github](https://github.com/yCalbaz/final-proje.git)
 
