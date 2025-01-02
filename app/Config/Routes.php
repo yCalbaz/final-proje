@@ -23,6 +23,12 @@ $routes->post('auth/register', 'AuthController::register'); // Form gönderimi i
 $routes->get('login', 'AuthController::login'); // Login sayfası için GET rota
 $routes->post('login', 'AuthController::loginUser'); // Giriş işlemi için POST rota
 
+
+$routes->get('anasayfa', 'Home::index');
+$routes->get('logout', 'AuthController::logout');
+
+
+
 /*
 $routes->get('/', [ProductController::class, 'listProducts']);
 $routes->post('cart/add/(:num)', [CartController::class, 'addToCart']);
@@ -44,3 +50,6 @@ $routes->post('cart/removeFromCart/(:num)', 'CartController::removeFromCart/$1')
 
 
 
+$routes->get('checkout/success', function () {
+    return view('sayfalar/checkout_success'); // Başarı sayfası
+});

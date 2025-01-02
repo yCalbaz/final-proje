@@ -265,12 +265,12 @@
             <div class="col-md-4">
                 <img src="assets/images/kader.jpg" class="rounded-circle mb-3" alt="Ekip Üyesi 2" style="width: 150px; height: 150px; object-fit: cover;">
                 <h5>Kader Demirdağ</h5>
-                <p>Operasyon Müdürü</p>
+                <p>Kurucu & Operasyon Müdürü</p>
             </div>
             <div class="col-md-4">
                 <img src="assets/images/yase.jpg" class="rounded-circle mb-3" alt="Ekip Üyesi 3" style="width: 150px; height: 150px; object-fit: cover;">
                 <h5>Yasemin Calbaz</h5>
-                <p>Pazarlama Uzmanı</p>
+                <p>Kurucu & Pazarlama Uzmanı</p>
             </div>
         </div>
     </div>

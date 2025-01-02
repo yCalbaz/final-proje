@@ -47,7 +47,8 @@
         <div class="content">
             <h1 class="display-4 fw-bold">Siparişiniz Onaylandı!</h1>
             <p class="lead">Bizi tercih ettiğiniz için teşekkür ederiz. Ödemenizi işleme alıyoruz.</p>
-            <a href="/public/anasayfa.php" class="btn btn-primary btn-lg">Anasayfaya Dön</a>
+            <!-- Anasayfaya dön butonu -->
+        <a href="<?= base_url('/'); ?>" class="btn btn-primary">Anasayfaya Dön</a>
         </div>
     </div>
 

@@ -76,5 +76,14 @@ class AuthController extends BaseController
     }
 }
 
+public function logout()
+{
+    // Kullanıcı oturumunu sonlandır
+    session()->destroy();
+
+    // Anasayfaya yönlendir
+    return redirect()->to(base_url('anasayfa'));
+}
+
 }
 
