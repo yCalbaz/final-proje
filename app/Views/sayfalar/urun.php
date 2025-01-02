@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Sepet</title>
+    <title> KAYZE</title>
     <meta name="description" content="The small framework with powerful features">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" type="image/png" href="/favicon.ico">
@@ -149,7 +149,7 @@ $connection->close();
             <form action="<?= base_url('cart/add/' . $product['id']); ?>" method="post">
     <input type="hidden" name="product_id" value="<?= esc($product['id']); ?>">
     <input type="number" name="adet" value="1" min="1">
-    <button type="submit">Sepete Ekle</button>
+    <button type="submit" class="btn btn-primary">Sepete Ekle</button>
 </form>
    </div>
     <?php endforeach; ?>

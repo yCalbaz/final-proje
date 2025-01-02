@@ -568,32 +568,16 @@ footer .social-links a {
 }
 
 .reklam-banner {
-    position: fixed;
-    bottom: 0;
+    position: fixed; /* Sayfanın altına sabitler */
+    bottom: 0; /* Alt kısmına hizalar */
     left: 0;
-    width: 100%;
-    background-color: #ff4757;
-    color: white;
-    text-align: center;
-    overflow: hidden; /* Taşan metni gizler */
-    padding: 10px 0;
-    z-index: 1000;
-    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2);
-    font-weight: bold;
-    font-size: 18px;
-}
-
-.kayan-yazi {
-    display: inline-block;
-    white-space: nowrap; /* Metni tek satırda tutar */
-    animation: kayan-metni 10s linear infinite; /* Sürekli kayan animasyon */
-}
-
-@keyframes kayan-metni {
-    0% {
-        transform: translateX(100%); /* Sağdan başla */
-    }
-    100% {
-        transform: translateX(-100%); /* Sola kadar kaydır */
-    }
+    width: 100%; /* Ekranın tamamını kaplar */
+    background-color: #ff4757; /* Arka plan rengi (canlı kırmızı) */
+    color: white; /* Yazı rengi */
+    text-align: center; /* Yazıyı ortalar */
+    padding: 10px 0; /* Üst-alt boşluk ekler */
+    z-index: 1000; /* Diğer öğelerin üzerinde görünmesini sağlar */
+    font-weight: bold; /* Kalın yazı */
+    font-size: 18px; /* Yazı boyutu */
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2); /* Üst kısmına gölge ekler */
 }

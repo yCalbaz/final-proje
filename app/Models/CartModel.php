@@ -11,6 +11,7 @@ class CartModel extends Model
 
     public function addProductToCart($product)
     {
+        $builder = $this->db->table('cart');
         // Sepette bu ürün var mı kontrol et
         $existingCartItem = $this->where('product_id', $product['id'])->first();
         

@@ -41,3 +41,6 @@ $routes->get('checkout/success', 'CheckoutController::success');
 
 
 $routes->post('cart/removeFromCart/(:num)', 'CartController::removeFromCart/$1');
+
+
+

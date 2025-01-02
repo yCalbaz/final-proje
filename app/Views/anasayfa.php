@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" type="image/png" href="/favicon.ico">
     <link rel="stylesheet" href="assets/css/anasayfa.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     
     <link rel="stylesheet" href="<?= base_url('assets/css/responsive.css'); ?>">
      <style>
@@ -19,21 +20,7 @@
          
         }
 
-        /* Arka Plan Görselinin Saydamlık Ayarları */
-        body::before {
-            content: ""; /* İçerik boş olacak */
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background-image: url('assets/images/adminarkaplan.jpg'); /* Arka plan görseli */
-            background-size: cover;
-            background-position: center center;
-            background-attachment: fixed;
-            opacity: 0.2; /* Saydamlık oranını buradan ayarlayabilirsiniz */
-            z-index: -1; /* İçeriğin önünde olmasını engeller */
-        }
+    
 
     
         .products {
@@ -160,25 +147,135 @@
 
 
 
-
-
-<div class="container" style="background-color: white; padding: 5px; border-radius: 10px; margin-top: 20px;">
-    <!-- Öne çıkan ürünler -->
-    <div class="container">
-        <h2>Öne Çıkan Ürünler</h2>
-
-        <section class="product-section">
-            <div id="product-list" class="product-list">
-                <!-- Ürünler buraya eklenecek -->
+<!-- Özellikler Bölümü -->
+<section id="ozellikler" class="py-5">
+        <div class="container text-center">
+            <h2 class="mb-4">Özellikler</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Hızlı Teslimat</h5>
+                            <p class="card-text">Siparişleriniz en kısa sürede kapınızda.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Kaliteli Ürünler</h5>
+                            <p class="card-text">Yüksek kalite standartlarında ürünler.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Müşteri Desteği</h5>
+                            <p class="card-text">7/24 yanınızdayız.</p>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </section>
-    </div>
+        </div>
+    </section>
+
+
+
+
+    <div>
+    <img src="assets/images/1.png" alt="Ürün 1" class="img-fluid w-100">
 </div>
 
-            <div class="products">
-                <img src="assets/images/1.png" alt="Ürün 1">
-  
+
+            <section id="yorumlar" class="py-5 bg-light">
+    <div class="container">
+        <h2 class="text-center mb-4">Müşteri Yorumları</h2>
+        <div class="row">
+            <!-- Yorum 1 -->
+            <div class="col-md-3">
+                <div class="card shadow-sm border-0">
+                    <div class="card-body text-center">
+                        <p class="mb-2"><i class="bi bi-chat-quote-fill text-primary fs-2"></i></p>
+                        <blockquote class="blockquote mb-0">
+                            <p class="small">"Ürünler gerçekten çok kaliteli, tam zamanında geldi!"</p>
+                        </blockquote>
+                    </div>
+                    <div class="card-footer bg-dark text-white text-center">
+                        Ahmet Yılmaz
+                    </div>
+                </div>
             </div>
+            <!-- Yorum 2 -->
+            <div class="col-md-3">
+                <div class="card shadow-sm border-0">
+                    <div class="card-body text-center">
+                        <p class="mb-2"><i class="bi bi-chat-quote-fill text-success fs-2"></i></p>
+                        <blockquote class="blockquote mb-0">
+                            <p class="small">"Müşteri hizmetleri çok ilgili, harika bir deneyim yaşadım."</p>
+                        </blockquote>
+                    </div>
+                    <div class="card-footer bg-dark text-white text-center">
+                        Zeynep Kaya
+                    </div>
+                </div>
+            </div>
+            <!-- Yorum 3 -->
+            <div class="col-md-3">
+                <div class="card shadow-sm border-0">
+                    <div class="card-body text-center">
+                        <p class="mb-2"><i class="bi bi-chat-quote-fill text-warning fs-2"></i></p>
+                        <blockquote class="blockquote mb-0">
+                            <p class="small">"Güvenilir bir site, ürünler sorunsuz teslim edildi."</p>
+                        </blockquote>
+                    </div>
+                    <div class="card-footer bg-dark text-white text-center">
+                        Mehmet Demir
+                    </div>
+                </div>
+            </div>
+            <!-- Yorum 4 -->
+            <div class="col-md-3">
+                <div class="card shadow-sm border-0">
+                    <div class="card-body text-center">
+                        <p class="mb-2"><i class="bi bi-chat-quote-fill text-danger fs-2"></i></p>
+                        <blockquote class="blockquote mb-0">
+                            <p class="small">"Ürün kalitesi mükemmel, herkese tavsiye ederim."</p>
+                        </blockquote>
+                    </div>
+                    <div class="card-footer bg-dark text-white text-center">
+                        Ayşe Çelik
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Ekip Bölümü -->
+<section id="ekip" class="py-5 bg-light">
+    <div class="container text-center">
+        <h2 class="mb-4">Ekibimiz</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <img src="assets/images/zehra.jpg" class="rounded-circle mb-3" alt="Ekip Üyesi 1" style="width: 150px; height: 150px; object-fit: cover;">
+                <h5>Zehra Sarıbaştanoğlu</h5>
+                <p>Kurucu & CEO</p>
+            </div>
+            <div class="col-md-4">
+                <img src="assets/images/kader.jpg" class="rounded-circle mb-3" alt="Ekip Üyesi 2" style="width: 150px; height: 150px; object-fit: cover;">
+                <h5>Kader Demirdağ</h5>
+                <p>Operasyon Müdürü</p>
+            </div>
+            <div class="col-md-4">
+                <img src="assets/images/yase.jpg" class="rounded-circle mb-3" alt="Ekip Üyesi 3" style="width: 150px; height: 150px; object-fit: cover;">
+                <h5>Yasemin Calbaz</h5>
+                <p>Pazarlama Uzmanı</p>
+            </div>
+        </div>
+    </div>
+</section>
+
 
 
 
@@ -208,30 +305,7 @@
     }
 </script>
 
-<!-- JavaScript kodu -->
-<script>
-    fetch('/random-products') // Node.js API endpoint'i
-        .then(response => response.json())
-        .then(data => {
-            const productList = document.getElementById('product-list');
-            productList.innerHTML = ''; // Mevcut listeyi temizle
 
-            data.products.forEach(product => {
-                const productItem = document.createElement('div');
-                productItem.classList.add('product-item');
-                
-                productItem.innerHTML = `
-                    <img src="${product.image_url}" alt="${product.name}">
-                    <h3>${product.name}</h3>
-                    <p>${product.description}</p>
-                    <p>${product.price}</p>
-                `;
-
-                productList.appendChild(productItem);
-            });
-        })
-        .catch(error => console.error('Ürünler çekilirken hata oluştu:', error));
-</script>
 
 <div class="reklam-banner">
     <marquee behavior="scroll" direction="left">

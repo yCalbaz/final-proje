@@ -269,7 +269,9 @@
 </div>
 
 <div class="container">
-<button class="top-right-button" onclick="window.location.href='anasayfa.php';">Çıkış</button>
+<button class="top-right-button" onclick="window.location.href='<?php echo base_url('anasayfa'); ?>';">Çıkış</button>
+
+
 
     <h1>Yönetici Paneli</h1>
 
@@ -305,7 +307,7 @@
 
     <!-- Ürün Listesi -->
     <h2 class="mt-5">Ürün Güncelleme ve Silme</h2>
-    <div id="product-list" class="product-list">
+    <div id="product-list" class="product-list"> 
         <!-- Ürünler burada listelenecek -->
         </div>
         <div id="update-modal" style="display: none;">

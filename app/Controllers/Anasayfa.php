@@ -4,7 +4,13 @@ class Anasayfa extends BaseController
 {
     public function index()
     {
-        return view('tema/header').view('anasayfa').view('tema/footer');
+        $productModel = new ProductModel();
+
+        // Tüm ürünleri çek
+        $products = $productModel->findAll();
+
+        // Ana sayfa görünümüne ürünleri gönder
+        return view('anasayfa', ['products' => $products]);
     }
     
 }
