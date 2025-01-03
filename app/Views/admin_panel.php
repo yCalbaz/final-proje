@@ -324,8 +324,7 @@
     </div>
         <!-- Diğer ürünler burada olacak -->
    
-        <a href="<?= base_url('/logout'); ?>" class="btn btn-danger">Çıkış Yap</a>
-
+        
     
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>

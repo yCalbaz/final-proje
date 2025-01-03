@@ -6,12 +6,12 @@ class Home extends BaseController
 {
     public function index(): string
     {
-        return view('anasayfa.php');
+        return view('anasayfa');
     }
     public function login()
     {
         
-            return view('auth/login.php');
+            return view('auth/login');
         
         
     }
@@ -19,21 +19,21 @@ class Home extends BaseController
     public function uyeol()
     {
         
-            return view('auth/uyeol.php');
+            return view('auth/uyeol');
         
         
     }
     public function hakkimizda()
     {
         
-            return view('sayfalar/hakkimizda.php');
+            return view('sayfalar/hakkimizda');
         
         
     }
     public function anasayfa()
     {
         
-            return view('sayfalar/index.php');
+            return view('sayfalar/index');
         
         
     }
@@ -41,7 +41,7 @@ class Home extends BaseController
     public function urun()
     {
         
-            return view('sayfalar/urun.php');
+            return view('sayfalar/urun');
         
         
     }
@@ -49,14 +49,21 @@ class Home extends BaseController
     public function iletisim()
     {
         
-            return view('sayfalar/iletisim.php');
+            return view('sayfalar/iletisim');
         
         
     }
     public function sepet()
     {
         
-            return view('sayfalar/sepet.php');
+            return view('sayfalar/sepet');
         }
+
+
+        public function checkoutSuccess()
+{
+    return view('sayfalar/checkout_success'); // Başarı sayfası
+}
+
         
 }

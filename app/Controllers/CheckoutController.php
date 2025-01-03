@@ -48,4 +48,18 @@ class CheckoutController extends BaseController
     {
         return view('sayfalar/checkout_success');  // Başarı sayfasını yükleyin
     }
+
+    // Kelime sınırlama fonksiyonu
+function word_limiter($text, $limit = 20) {
+    // Metni boşluklardan ayırarak kelimelere böleriz
+    $words = explode(' ', $text);
+    
+    // Eğer kelime sayısı limitin üzerindeyse, sadece belirli sayıda kelimeyi alırız
+    if (count($words) > $limit) {
+        $text = implode(' ', array_slice($words, 0, $limit)) . '...';
+    }
+    
+    return $text;
+}
+
 }

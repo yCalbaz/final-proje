@@ -48,8 +48,4 @@ $routes->get('checkout/success', 'CheckoutController::success');
 
 $routes->post('cart/removeFromCart/(:num)', 'CartController::removeFromCart/$1');
 
-
-
-$routes->get('checkout/success', function () {
-    return view('sayfalar/checkout_success'); // Başarı sayfası
-});
+$routes->get('checkout/success', 'Home::checkoutSuccess');
